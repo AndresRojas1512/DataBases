@@ -19,17 +19,17 @@ ALTER TABLE cars
     ADD CONSTRAINT fkCarsEngineID FOREIGN KEY (engineID) REFERENCES engines(engineID),
     ADD CONSTRAINT fkCarsManufacturerID FOREIGN KEY (manufacturerID) REFERENCES manufacturers(manufacturerID),
     ADD CONSTRAINT checkYear CHECK (modelYear > 1885 AND modelYear <= EXTRACT(YEAR FROM CURRENT_DATE)),
-    ADD CONSTRAINT checkWeightPositive CHECK (weight > 0),
+    ADD CONSTRAINT checkWeightPositive CHECK (modelWeight > 0),
     ALTER COLUMN engineID SET NOT NULL,
     ALTER COLUMN manufacturerID SET NOT NULL,
     ALTER COLUMN modelName SET NOT NULL,
     ALTER COLUMN bodyType SET NOT NULL,
     ALTER COLUMN modelYear SET NOT NULL,
-    ALTER COLUMN weight SET NOT NULL,
+    ALTER COLUMN modelWeight SET NOT NULL,
     ALTER COLUMN driveMode SET NOT NULL;
 
 ALTER TABLE engines
-    ALTER COLUMN type SET NOT NULL,
+    ALTER COLUMN engineType SET NOT NULL,
     ALTER COLUMN displacement SET NOT NULL,
     ALTER COLUMN fuelType SET NOT NULL,
     ALTER COLUMN fuelConsumption SET NOT NULL,
@@ -44,7 +44,7 @@ ALTER TABLE engines
     ADD CONSTRAINT checkHorsepower CHECK (horsepower > 0),
     ADD CONSTRAINT checkTorque CHECK (torque > 0),
     ADD CONSTRAINT checkCompressionRatioRange CHECK (compressionRatio BETWEEN 5.0 AND 20.0),
-    ADD CONSTRAINT checkType CHECK (type IN ('Inline', 'V', 'Flat', 'Rotary')),
+    ADD CONSTRAINT checkEngineType CHECK (engineType IN ('Inline', 'V', 'Flat', 'Rotary')),
     ADD CONSTRAINT checkFuelType CHECK (fuelType IN ('Gasoline', 'Diesel', 'Electric', 'Hybrid')),
     ADD CONSTRAINT checkFuelSystem CHECK (fuelSystem IN ('Direct Injection', 'Port Injection', 'Carbureted'));
 

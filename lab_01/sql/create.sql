@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS cars (
     bodyType VARCHAR(100),
     modelYear INT,
     modelWeight INT,
-    driveMode VARCHAR(100),
+    driveMode VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS engines (
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS engines (
     compressionRatio DECIMAL,
     valveConfiguration VARCHAR(100),
     turboCharged BOOLEAN,
-    fuelSystem VARCHAR(50)
+    fuelSystem VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS sells (
@@ -47,5 +47,5 @@ CREATE TABLE IF NOT EXISTS sells (
     carID INT,
     sellDate DATE,
     price INT,
-    specialConditions VARCHAR(100),
+    specialConditions VARCHAR(100)
 );
