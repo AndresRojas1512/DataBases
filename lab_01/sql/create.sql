@@ -1,52 +1,51 @@
 CREATE TABLE IF NOT EXISTS manufacturers (
     manufacturerID SERIAL PRIMARY KEY,
-    name VARCHAR(100),
+    manufacturerName VARCHAR(100),
     headquarters VARCHAR(100),
-    founded DATE,
+    foundationDate DATE,
     ceo VARCHAR(100),
     revenue INT
 );
 
 CREATE TABLE IF NOT EXISTS dealers (
     dealerID SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    address VARCHAR(100),
-    phoneNumber INT,
+    dealerName VARCHAR(100),
+    dealerAddress VARCHAR(100),
+    phoneNumber VARCHAR(100),
     email VARCHAR(100),
     authorizationStatus VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS cars (
     carID SERIAL PRIMARY KEY,
+    engineID INT,
     manufacturerID INT,
     modelName VARCHAR(100),
-    year INT,
-    bodyStyle VARCHAR(100),
-    weight INT,
-    fuelType VARCHAR(100),
-    displacement INT,
-    type VARCHAR(100),
-    horsepower INT,
-    torque INT,
-    engineMaterial VARCHAR(100),
+    bodyType VARCHAR(100),
+    modelYear INT,
+    modelWeight INT,
+    driveMode VARCHAR(100),
 );
 
 CREATE TABLE IF NOT EXISTS engines (
     engineID SERIAL PRIMARY KEY,
-    compressionRatio NUMERIC,
+    engineType VARCHAR(100),
+    displacement INT,
+    fuelType VARCHAR(100),
+    fuelConsumption INT,
+    horsepower INT,
+    torque INT,
+    compressionRatio DECIMAL,
     valveConfiguration VARCHAR(100),
     turboCharged BOOLEAN,
-    fuelSystem VARCHAR(100),
-    engineMaterial VARCHAR(100),
+    fuelSystem VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS carEngineMappings (
-    mappingID SERIAL PRIMARY KEY,
-    carID INTEGER,
-    engineID INTEGER,
-    defaultEngine BOOLEAN,
-    performanceVariant BOOLEAN,
-    installationDate DATE,
-    FOREIGN KEY (carID) REFERENCES cars(carID),
-    FOREIGN KEY (engineID) REFERENCES engines(engineID)
+CREATE TABLE IF NOT EXISTS sells (
+    sellID SERIAL PRIMARY KEY,
+    dealerID INT,
+    carID INT,
+    sellDate DATE,
+    price INT,
+    specialConditions VARCHAR(100),
 );
