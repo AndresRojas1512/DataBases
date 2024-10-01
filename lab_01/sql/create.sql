@@ -24,7 +24,6 @@ CREATE TABLE IF NOT EXISTS cars (
     bodyType VARCHAR(100),
     modelYear INT,
     modelWeight INT,
-    driveMode VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS engines (
