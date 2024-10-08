@@ -9,6 +9,7 @@ ALTER TABLE manufacturers
 
 ALTER TABLE dealers
     ADD CONSTRAINT uniqueDealerName UNIQUE (dealerName),
+    ADD CONSTRAINT checkAuthorizationStatus CHECK (authorizationStatus IN ('Authorized', 'Pending', 'Revoked', 'Suspended', 'Inactive')),
     ALTER COLUMN dealerName SET NOT NULL,
     ALTER COLUMN dealerAddress SET NOT NULL,
     ALTER COLUMN phoneNumber SET NOT NULL,

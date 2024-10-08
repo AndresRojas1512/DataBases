@@ -133,9 +133,9 @@ def fix_foundation_dates(input_file):
         
         for row in reader:
             try:
-                year = int(row['foundationDate'])  # Convert the foundation date to an integer
+                year = int(row['foundationDate'])
                 if year < 1886 or year > 2024:
-                    # raise ValueError  # Trigger the error handling to assign a new year
+                    # raise ValueError
                     print(f"Out of range: {row}")
             except ValueError:
                 # row['foundationDate'] = random.randint(1886, 2024)
