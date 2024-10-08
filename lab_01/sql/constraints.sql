@@ -1,10 +1,10 @@
 ALTER TABLE manufacturers
     ADD CONSTRAINT uniqueName UNIQUE (manufacturerName),
-    ADD CONSTRAINT checkFoundationDate CHECK (foundationDate <= CURRENT_DATE),
+    ADD CONSTRAINT checkFoundationYear CHECK (foundationYear >= 1886 AND foundationYear <= 2024),
     ADD CONSTRAINT checkRevenue CHECK (revenue >= 0),
     ALTER COLUMN manufacturerName SET NOT NULL,
     ALTER COLUMN headquarters SET NOT NULL,
-    ALTER COLUMN foundationDate SET NOT NULL,
+    ALTER COLUMN foundationYear SET NOT NULL,
     ALTER COLUMN ceo SET NOT NULL;
 
 ALTER TABLE dealers

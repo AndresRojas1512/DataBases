@@ -2,9 +2,9 @@ CREATE TABLE IF NOT EXISTS manufacturers (
     manufacturerID SERIAL PRIMARY KEY,
     manufacturerName VARCHAR(100),
     headquarters VARCHAR(100),
-    foundationDate DATE,
     ceo VARCHAR(100),
-    revenue INT
+    foundationYear INT,
+    revenue BIGINT
 );
 
 CREATE TABLE IF NOT EXISTS dealers (
