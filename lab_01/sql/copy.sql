@@ -12,3 +12,8 @@ COPY engines(engineType, fuelType, valveConfiguration, fuelSystem, displacement,
 FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/engines.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY cars(engineID, manufacturerID, modelName, bodyType, modelYear, modelWeight)
+FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/cars.csv'
+DELIMITER ','
+CSV HEADER;

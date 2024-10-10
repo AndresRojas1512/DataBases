@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS cars (
     modelName VARCHAR(100),
     bodyType VARCHAR(100),
     modelYear INT,
-    modelWeight INT,
+    modelWeight INT
 );
 
 CREATE TABLE IF NOT EXISTS engines (
