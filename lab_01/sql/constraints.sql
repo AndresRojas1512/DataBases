@@ -46,7 +46,7 @@ ALTER TABLE engines
     ADD CONSTRAINT checkFuelType CHECK (fuelType IN ('Gasoline', 'Diesel', 'Electric', 'Hybrid')),
     ADD CONSTRAINT checkFuelSystem CHECK (fuelSystem IN ('Direct Injection', 'Port Injection', 'Carbureted'));
 
-ALTER TABLE sells
+ALTER TABLE sales
     ADD CONSTRAINT fkSellsDealerID FOREIGN KEY (dealerID) REFERENCES dealers(dealerID),
     ADD CONSTRAINT fkSellsCardID FOREIGN KEY (carID) REFERENCES cars(carID),
     ALTER COLUMN dealerID SET NOT NULL,

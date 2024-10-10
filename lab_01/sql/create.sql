@@ -39,11 +39,12 @@ CREATE TABLE IF NOT EXISTS engines (
     turbocharged BOOLEAN
 );
 
-CREATE TABLE IF NOT EXISTS sells (
+CREATE TABLE IF NOT EXISTS sales (
     sellID SERIAL PRIMARY KEY,
     dealerID INT,
     carID INT,
     sellDate DATE,
     price INT,
-    specialConditions VARCHAR(100)
+    warrantyPeriod INT,
+    paymentMethod VARCHAR(100)
 );

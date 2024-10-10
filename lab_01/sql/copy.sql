@@ -17,3 +17,8 @@ COPY cars(engineID, manufacturerID, modelName, bodyType, modelYear, modelWeight)
 FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/cars.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY sales(dealerID, carID, sellDate, price, warrantyPeriod, paymentMethod)
+FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/sales.csv'
+DELIMITER ','
+CSV HEADER;
