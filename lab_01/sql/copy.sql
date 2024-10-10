@@ -22,3 +22,8 @@ COPY sales(dealerID, carID, sellDate, price, warrantyPeriod, paymentMethod)
 FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/sales.csv'
 DELIMITER ','
 CSV HEADER;
+
+COPY dealersManufacturers(dealerID, manufacturerID)
+FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/dealersManufacturers.csv'
+DELIMITER ','
+CSV HEADER

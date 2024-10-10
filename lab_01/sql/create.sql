@@ -48,3 +48,11 @@ CREATE TABLE IF NOT EXISTS sales (
     warrantyPeriod INT,
     paymentMethod VARCHAR(100)
 );
+
+CREATE TABLE IF NOT EXISTS dealersManufacturers (
+    dealerID INT,
+    manufacturerID INT,
+    PRIMARY KEY (dealerID, manufacturerID),
+    FOREIGN KEY (dealerID) REFERENCES dealers(dealerID),
+    FOREIGN KEY (manufacturerID) REFERENCES manufacturers(manufacturerID)
+)
