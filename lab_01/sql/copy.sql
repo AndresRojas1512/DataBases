@@ -8,3 +8,7 @@ FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/dealers.c
 DELIMITER ','
 CSV HEADER;
 
+COPY engines(engineType, fuelType, valveConfiguration, fuelSystem, displacement, horsepower, torque, compressionRatio, turbocharged)
+FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/engines.csv'
+DELIMITER ','
+CSV HEADER;

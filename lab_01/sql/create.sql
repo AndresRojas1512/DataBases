@@ -29,15 +29,14 @@ CREATE TABLE IF NOT EXISTS cars (
 CREATE TABLE IF NOT EXISTS engines (
     engineID SERIAL PRIMARY KEY,
     engineType VARCHAR(100),
-    displacement INT,
     fuelType VARCHAR(100),
-    fuelConsumption INT,
+    valveConfiguration VARCHAR(100),
+    fuelSystem VARCHAR(100),
+    displacement INT,
     horsepower INT,
     torque INT,
     compressionRatio DECIMAL,
-    valveConfiguration VARCHAR(100),
-    turboCharged BOOLEAN,
-    fuelSystem VARCHAR(100)
+    turbocharged BOOLEAN
 );
 
 CREATE TABLE IF NOT EXISTS sells (
