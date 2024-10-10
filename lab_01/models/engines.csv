@@ -1,0 +1,1001 @@
+Engine Type,fuelType,valveConfiguration,fuelSystem,displacement,horsepower,torque,compressionRatio,turboCharged
+Rotary,Diesel,DOHC,Carbureted,2388,490,259,10,0
+V,Gasoline,OHC,Carbureted,2652,243,395,17,1
+Rotary,Gasoline,OHV,Direct Injection,3510,160,128,14,0
+Flat,Gasoline,DOHC,Carbureted,3738,253,227,9,0
+Inline,Diesel,DOHC,Direct Injection,3975,378,219,11,0
+Rotary,Gasoline,OHC,Carbureted,1587,399,452,12,0
+Rotary,Gasoline,DOHC,Port Injection,1389,446,424,7,1
+V,Hybrid,OHC,Carbureted,3288,133,336,12,1
+Flat,Hybrid,OHV,Port Injection,1299,420,431,6,0
+Rotary,Electric,OHC,Port Injection,1767,294,422,5,0
+V,Diesel,OHC,Carbureted,1347,214,422,20,1
+Flat,Diesel,OHC,Direct Injection,3939,133,108,15,0
+Inline,Electric,OHC,Carbureted,1077,134,418,5,1
+V,Gasoline,OHV,Carbureted,3409,515,291,5,1
+Rotary,Electric,OHV,Carbureted,1152,221,319,6,0
+V,Gasoline,OHV,Direct Injection,2423,452,136,13,0
+Rotary,Hybrid,OHC,Carbureted,3747,550,184,7,1
+V,Hybrid,DOHC,Direct Injection,2409,214,114,19,0
+V,Diesel,DOHC,Carbureted,1130,315,351,10,0
+Inline,Gasoline,OHC,Carbureted,1301,187,132,9,0
+Inline,Gasoline,DOHC,Port Injection,2584,416,317,11,1
+Inline,Diesel,DOHC,Port Injection,1337,527,364,6,0
+Flat,Gasoline,OHV,Carbureted,2596,302,198,8,1
+V,Electric,DOHC,Direct Injection,1815,516,383,12,0
+Rotary,Hybrid,OHC,Direct Injection,2636,155,309,13,1
+Flat,Electric,OHV,Port Injection,1782,492,487,20,1
+V,Gasoline,OHV,Carbureted,1519,504,467,17,1
+Flat,Diesel,OHV,Direct Injection,2416,483,484,10,0
+V,Diesel,OHC,Carbureted,1658,112,195,7,0
+Flat,Electric,OHC,Carbureted,3061,479,195,16,0
+Flat,Hybrid,DOHC,Carbureted,1891,401,212,6,0
+V,Electric,OHV,Direct Injection,2192,237,121,15,1
+V,Diesel,OHC,Direct Injection,2001,283,406,17,1
+Flat,Electric,DOHC,Carbureted,1176,497,260,18,1
+Inline,Electric,DOHC,Carbureted,3153,240,364,10,1
+Flat,Gasoline,OHV,Carbureted,2946,369,277,18,1
+Flat,Diesel,OHC,Carbureted,3608,346,441,8,1
+V,Electric,OHV,Carbureted,1279,356,327,15,0
+Flat,Hybrid,OHC,Direct Injection,1972,136,168,14,1
+Rotary,Gasoline,OHV,Carbureted,3084,530,171,8,1
+Flat,Diesel,DOHC,Direct Injection,1115,382,323,17,1
+Flat,Gasoline,OHC,Direct Injection,2396,529,124,9,1
+Inline,Diesel,DOHC,Carbureted,3150,368,307,7,1
+Inline,Electric,OHC,Port Injection,3171,332,132,6,0
+Inline,Gasoline,OHC,Carbureted,3809,551,446,7,0
+Flat,Electric,OHC,Carbureted,1915,437,442,14,0
+V,Hybrid,DOHC,Port Injection,1551,249,402,14,0
+Rotary,Electric,DOHC,Direct Injection,2559,130,148,7,1
+Rotary,Electric,OHV,Direct Injection,1493,565,122,17,0
+Flat,Gasoline,OHV,Direct Injection,3615,562,491,15,1
+V,Diesel,OHC,Direct Injection,1765,573,272,6,0
+Inline,Diesel,DOHC,Port Injection,3372,266,359,15,0
+V,Hybrid,DOHC,Direct Injection,2920,146,144,11,0
+Flat,Diesel,DOHC,Direct Injection,1306,189,274,7,0
+Flat,Diesel,OHC,Carbureted,2579,191,186,13,1
+Rotary,Diesel,DOHC,Port Injection,1299,340,152,9,0
+Flat,Electric,DOHC,Carbureted,2903,503,166,6,1
+V,Gasoline,OHV,Port Injection,3814,397,104,10,0
+Rotary,Electric,DOHC,Direct Injection,3330,431,364,18,0
+Rotary,Diesel,OHV,Direct Injection,1915,585,277,13,0
+Rotary,Electric,OHV,Direct Injection,2645,305,455,7,0
+V,Diesel,DOHC,Carbureted,1976,385,405,5,1
+Inline,Diesel,DOHC,Direct Injection,1183,469,269,5,0
+Rotary,Electric,DOHC,Direct Injection,3672,554,486,19,1
+V,Electric,OHV,Carbureted,1866,227,293,15,0
+V,Diesel,OHC,Carbureted,1549,474,331,8,0
+Rotary,Gasoline,OHV,Port Injection,3400,554,197,17,0
+Flat,Hybrid,OHV,Port Injection,1334,334,376,9,0
+V,Gasoline,DOHC,Direct Injection,2244,569,374,6,1
+Rotary,Gasoline,OHC,Direct Injection,1311,362,160,12,0
+Flat,Electric,DOHC,Direct Injection,2933,180,355,20,0
+V,Diesel,OHV,Direct Injection,3301,171,356,15,0
+Rotary,Electric,OHC,Direct Injection,1327,125,339,10,0
+Inline,Diesel,OHC,Carbureted,2250,452,302,10,0
+Flat,Diesel,OHC,Port Injection,3085,292,341,14,1
+Rotary,Hybrid,DOHC,Direct Injection,1569,110,466,20,1
+V,Hybrid,OHV,Port Injection,3612,387,336,17,0
+Inline,Hybrid,DOHC,Port Injection,2611,539,463,8,1
+Flat,Hybrid,OHC,Port Injection,1592,356,410,17,0
+Inline,Gasoline,OHV,Port Injection,3652,553,244,7,0
+Rotary,Hybrid,OHC,Port Injection,3317,241,335,11,0
+Flat,Gasoline,OHC,Direct Injection,2304,547,480,8,1
+V,Hybrid,OHV,Carbureted,2140,176,223,13,1
+Flat,Hybrid,DOHC,Direct Injection,1459,198,448,9,1
+Flat,Diesel,DOHC,Carbureted,1837,336,228,12,0
+Flat,Hybrid,DOHC,Carbureted,2394,556,192,10,0
+V,Hybrid,OHC,Port Injection,2474,303,241,5,0
+Inline,Gasoline,OHC,Direct Injection,3665,326,146,18,0
+Rotary,Diesel,OHC,Port Injection,1610,412,360,15,1
+Inline,Gasoline,DOHC,Direct Injection,3785,257,170,8,0
+V,Hybrid,DOHC,Carbureted,2833,584,259,15,1
+Rotary,Electric,DOHC,Direct Injection,3970,118,290,17,0
+Rotary,Diesel,DOHC,Direct Injection,1057,231,107,7,0
+Rotary,Electric,DOHC,Direct Injection,2121,326,125,9,0
+V,Diesel,OHV,Port Injection,3694,447,356,10,1
+Rotary,Gasoline,OHV,Direct Injection,3054,459,239,16,0
+V,Gasoline,OHV,Direct Injection,3731,452,160,9,0
+Rotary,Gasoline,OHV,Carbureted,3305,276,386,18,0
+Flat,Diesel,OHV,Direct Injection,3862,112,173,17,1
+Flat,Hybrid,OHV,Carbureted,2637,588,291,9,1
+Inline,Gasoline,DOHC,Port Injection,3994,110,357,14,0
+Rotary,Hybrid,OHV,Direct Injection,2706,175,395,16,0
+V,Hybrid,DOHC,Port Injection,2253,400,312,13,1
+Flat,Gasoline,DOHC,Carbureted,3687,526,216,5,1
+Rotary,Electric,OHC,Carbureted,3061,170,101,14,0
+Rotary,Diesel,OHC,Direct Injection,1396,486,212,6,1
+V,Diesel,OHV,Direct Injection,1054,286,283,10,1
+Inline,Electric,DOHC,Port Injection,1292,487,388,16,0
+Flat,Gasoline,OHC,Port Injection,1209,269,223,14,1
+Rotary,Diesel,OHC,Port Injection,3267,223,158,18,0
+Inline,Gasoline,OHC,Port Injection,2823,513,289,16,1
+V,Hybrid,OHC,Carbureted,3912,372,287,15,1
+V,Diesel,OHC,Port Injection,2611,328,348,8,0
+Flat,Diesel,OHV,Carbureted,3856,322,483,11,0
+V,Hybrid,OHC,Direct Injection,2350,411,392,6,1
+V,Diesel,OHC,Port Injection,1657,578,322,5,0
+V,Diesel,OHV,Port Injection,1561,457,406,10,0
+Inline,Electric,OHV,Direct Injection,1503,462,297,17,0
+Flat,Diesel,OHV,Direct Injection,3057,408,144,9,0
+Inline,Hybrid,OHC,Direct Injection,1638,455,175,9,1
+Flat,Diesel,OHC,Carbureted,1139,412,189,6,0
+Rotary,Hybrid,DOHC,Direct Injection,3560,208,445,17,1
+Rotary,Hybrid,OHC,Direct Injection,1354,129,479,20,0
+Inline,Electric,OHV,Direct Injection,3343,205,334,20,1
+Inline,Electric,OHV,Port Injection,1315,499,294,9,1
+Flat,Diesel,DOHC,Port Injection,1025,312,276,7,0
+Flat,Electric,OHC,Direct Injection,3897,485,162,12,0
+V,Diesel,OHV,Carbureted,2450,548,330,10,0
+V,Hybrid,OHC,Port Injection,3089,413,182,12,0
+Rotary,Gasoline,DOHC,Carbureted,1289,180,376,8,1
+Flat,Gasoline,DOHC,Direct Injection,1870,496,392,12,0
+Flat,Electric,OHV,Carbureted,1001,169,137,17,1
+Rotary,Gasoline,OHV,Carbureted,1668,470,228,18,0
+Inline,Gasoline,DOHC,Direct Injection,3465,367,317,14,0
+V,Electric,DOHC,Carbureted,1218,486,308,9,1
+Flat,Electric,DOHC,Carbureted,2692,542,380,5,1
+Rotary,Electric,DOHC,Carbureted,2366,556,473,8,1
+Flat,Electric,DOHC,Port Injection,3500,427,150,12,0
+V,Diesel,DOHC,Port Injection,3855,541,314,18,1
+Flat,Electric,OHC,Carbureted,2707,110,479,20,1
+Inline,Diesel,OHC,Port Injection,1824,588,315,15,0
+Rotary,Electric,OHC,Port Injection,1331,508,425,17,0
+Flat,Diesel,OHC,Port Injection,3353,522,328,17,0
+Rotary,Diesel,OHV,Port Injection,2859,264,234,9,0
+Flat,Hybrid,OHC,Direct Injection,1431,384,246,17,1
+Inline,Diesel,OHV,Carbureted,2751,212,119,10,0
+Flat,Diesel,DOHC,Carbureted,1566,384,216,16,0
+Inline,Electric,OHC,Port Injection,1195,535,258,8,0
+V,Electric,OHC,Carbureted,1333,365,460,6,0
+Inline,Hybrid,DOHC,Direct Injection,2196,134,172,9,1
+Rotary,Electric,OHV,Carbureted,3743,536,156,17,0
+Inline,Diesel,OHV,Port Injection,2100,195,467,17,1
+Inline,Gasoline,DOHC,Direct Injection,3996,295,193,13,1
+Rotary,Diesel,OHC,Carbureted,3479,235,353,12,1
+V,Diesel,OHC,Carbureted,3540,497,417,15,1
+Inline,Electric,OHC,Port Injection,1130,302,251,6,0
+V,Diesel,OHC,Carbureted,3746,374,476,18,0
+V,Electric,OHV,Port Injection,1563,589,391,6,0
+Inline,Hybrid,OHC,Carbureted,2924,462,238,6,1
+Inline,Gasoline,OHC,Carbureted,1560,304,256,12,1
+Inline,Gasoline,OHV,Direct Injection,1718,526,234,7,1
+Flat,Electric,OHC,Carbureted,3357,533,398,12,1
+Inline,Hybrid,OHC,Carbureted,3197,526,146,10,0
+Rotary,Hybrid,DOHC,Direct Injection,2247,383,385,19,1
+V,Gasoline,DOHC,Carbureted,1360,389,249,7,1
+Inline,Hybrid,OHV,Direct Injection,2728,393,270,12,0
+Rotary,Electric,DOHC,Port Injection,3241,527,100,11,1
+Rotary,Gasoline,DOHC,Direct Injection,1944,477,473,17,1
+V,Electric,DOHC,Carbureted,1815,580,207,15,1
+V,Gasoline,OHV,Direct Injection,3140,123,102,19,1
+V,Gasoline,OHC,Port Injection,3915,252,318,14,0
+V,Gasoline,OHC,Direct Injection,1082,215,346,5,0
+Inline,Hybrid,OHC,Port Injection,2207,183,195,11,0
+Rotary,Diesel,OHV,Direct Injection,2675,573,415,14,1
+Rotary,Gasoline,OHV,Carbureted,1126,465,261,19,1
+Inline,Electric,OHV,Direct Injection,1854,275,128,18,0
+V,Diesel,OHC,Carbureted,2591,325,277,17,0
+V,Diesel,DOHC,Carbureted,3240,427,114,15,1
+Inline,Diesel,OHV,Direct Injection,1730,452,274,9,1
+Rotary,Gasoline,OHC,Carbureted,3645,416,430,14,0
+Inline,Diesel,OHC,Carbureted,1267,161,494,16,0
+Inline,Diesel,OHC,Port Injection,2326,407,214,13,0
+Flat,Diesel,DOHC,Direct Injection,3853,160,351,7,1
+Inline,Gasoline,OHV,Carbureted,3102,336,214,20,1
+V,Diesel,DOHC,Port Injection,1188,421,322,8,1
+V,Diesel,DOHC,Port Injection,2651,328,190,5,0
+Inline,Electric,OHC,Direct Injection,3942,289,372,18,1
+Rotary,Gasoline,DOHC,Direct Injection,1370,173,482,16,1
+V,Electric,DOHC,Port Injection,3978,101,231,14,0
+Rotary,Hybrid,DOHC,Port Injection,2300,162,189,14,1
+Flat,Diesel,OHV,Port Injection,2274,218,235,19,1
+V,Hybrid,DOHC,Port Injection,1730,377,239,11,1
+V,Electric,DOHC,Direct Injection,1225,354,419,19,1
+Inline,Hybrid,DOHC,Direct Injection,1437,251,180,12,1
+Rotary,Diesel,DOHC,Carbureted,3427,157,352,18,1
+Rotary,Diesel,OHV,Direct Injection,2207,286,267,7,0
+V,Hybrid,OHV,Port Injection,2256,218,365,18,1
+Inline,Electric,DOHC,Direct Injection,2823,301,190,18,1
+Inline,Diesel,DOHC,Carbureted,2679,383,284,6,1
+Flat,Gasoline,DOHC,Direct Injection,1195,527,254,18,1
+Inline,Gasoline,OHV,Port Injection,2159,333,486,20,0
+Rotary,Electric,DOHC,Direct Injection,2290,416,442,18,0
+Inline,Gasoline,DOHC,Port Injection,1101,224,218,7,0
+V,Gasoline,OHV,Port Injection,3671,393,410,16,1
+V,Diesel,OHC,Direct Injection,2269,287,274,5,1
+Rotary,Gasoline,OHV,Carbureted,1934,425,475,13,0
+Flat,Hybrid,DOHC,Direct Injection,2609,358,304,6,1
+Inline,Gasoline,DOHC,Carbureted,2765,114,457,9,1
+Rotary,Hybrid,OHV,Direct Injection,3547,334,363,11,0
+Flat,Diesel,OHV,Port Injection,2275,266,351,17,1
+Rotary,Hybrid,OHC,Carbureted,1522,142,334,9,0
+Rotary,Hybrid,OHV,Carbureted,3721,308,274,18,1
+Rotary,Diesel,OHV,Direct Injection,2325,419,336,10,1
+Rotary,Diesel,OHC,Port Injection,1950,357,224,9,0
+Inline,Electric,OHC,Carbureted,1818,183,229,15,0
+Inline,Gasoline,OHC,Port Injection,2243,245,381,6,0
+V,Hybrid,OHV,Direct Injection,3197,427,375,6,1
+Rotary,Diesel,OHC,Port Injection,1374,203,204,15,0
+Inline,Diesel,OHV,Carbureted,1417,140,249,20,1
+V,Electric,DOHC,Carbureted,2265,346,298,7,0
+V,Electric,DOHC,Carbureted,3731,541,297,16,0
+Flat,Electric,DOHC,Direct Injection,2854,448,398,13,0
+V,Gasoline,OHV,Carbureted,1482,198,387,13,0
+Inline,Hybrid,OHV,Port Injection,1936,448,187,12,0
+Rotary,Electric,OHV,Direct Injection,1122,424,124,18,0
+Rotary,Electric,OHC,Carbureted,1601,470,188,18,0
+Rotary,Gasoline,DOHC,Direct Injection,2426,165,381,8,1
+V,Diesel,OHC,Port Injection,2977,199,332,13,0
+Inline,Gasoline,OHV,Port Injection,3568,395,112,11,0
+Inline,Electric,DOHC,Carbureted,3772,430,105,13,1
+Flat,Diesel,DOHC,Direct Injection,1459,146,444,13,0
+Rotary,Gasoline,OHC,Direct Injection,2133,477,337,15,1
+Rotary,Gasoline,DOHC,Carbureted,1324,312,420,14,1
+Inline,Diesel,OHV,Direct Injection,2379,413,397,12,1
+Rotary,Electric,DOHC,Port Injection,1844,197,337,7,0
+V,Gasoline,OHV,Carbureted,1819,402,118,9,1
+Rotary,Electric,OHC,Direct Injection,3198,118,110,9,0
+Flat,Diesel,OHC,Carbureted,1712,141,289,18,0
+Rotary,Gasoline,DOHC,Port Injection,3077,494,288,19,0
+Inline,Electric,DOHC,Port Injection,3319,454,206,11,1
+Flat,Electric,DOHC,Carbureted,2866,548,210,12,1
+Flat,Hybrid,OHV,Direct Injection,3302,260,363,10,1
+V,Diesel,DOHC,Port Injection,1662,102,210,11,0
+V,Gasoline,OHV,Direct Injection,2158,504,441,6,1
+Flat,Electric,OHV,Carbureted,2802,474,285,17,1
+V,Electric,DOHC,Direct Injection,1053,156,103,20,0
+Flat,Diesel,OHV,Port Injection,3514,179,414,16,0
+Inline,Gasoline,OHC,Direct Injection,3826,404,271,14,0
+Flat,Hybrid,OHV,Port Injection,3747,599,230,7,0
+Inline,Gasoline,OHV,Direct Injection,3499,230,497,5,1
+Flat,Diesel,DOHC,Direct Injection,3302,385,387,16,0
+Rotary,Diesel,OHV,Carbureted,1630,329,400,15,1
+Inline,Hybrid,DOHC,Carbureted,1099,497,329,6,0
+Inline,Electric,OHV,Port Injection,3224,386,391,12,1
+Flat,Electric,OHC,Port Injection,2546,518,417,6,1
+Rotary,Hybrid,OHV,Carbureted,1155,403,275,6,0
+Inline,Hybrid,OHV,Direct Injection,1883,202,397,14,1
+Inline,Gasoline,OHC,Carbureted,2428,305,389,5,0
+V,Gasoline,OHV,Port Injection,1698,389,207,17,0
+Inline,Hybrid,OHC,Carbureted,1383,423,435,6,1
+Flat,Gasoline,OHV,Direct Injection,1336,494,139,10,0
+Inline,Gasoline,OHC,Direct Injection,3326,590,255,20,1
+Inline,Gasoline,OHV,Port Injection,2032,468,493,11,0
+Rotary,Electric,OHC,Direct Injection,3298,347,346,8,1
+V,Diesel,DOHC,Carbureted,2955,195,243,20,1
+Flat,Diesel,OHV,Direct Injection,2064,273,241,15,0
+Rotary,Electric,OHC,Carbureted,1481,475,131,8,1
+Flat,Hybrid,DOHC,Direct Injection,1696,505,347,9,0
+V,Gasoline,OHC,Direct Injection,2797,489,173,7,1
+Rotary,Diesel,OHV,Port Injection,2910,130,321,18,1
+Flat,Gasoline,OHC,Port Injection,2622,497,251,13,0
+Rotary,Gasoline,DOHC,Direct Injection,2050,422,289,19,1
+Inline,Hybrid,OHC,Carbureted,2462,237,458,6,1
+Flat,Electric,OHC,Carbureted,3113,485,454,15,1
+V,Gasoline,OHV,Port Injection,3264,556,222,18,0
+Inline,Hybrid,OHV,Direct Injection,2120,121,333,7,0
+V,Electric,DOHC,Carbureted,2973,511,387,6,0
+Rotary,Hybrid,DOHC,Carbureted,1989,401,382,19,0
+V,Gasoline,DOHC,Port Injection,2414,230,480,10,1
+V,Gasoline,OHV,Direct Injection,2735,318,476,10,1
+Inline,Diesel,OHC,Direct Injection,2327,208,386,10,0
+V,Gasoline,DOHC,Carbureted,3142,139,380,9,1
+Inline,Gasoline,OHV,Direct Injection,1343,493,498,9,1
+Inline,Gasoline,DOHC,Port Injection,3300,303,435,11,1
+Flat,Diesel,OHC,Direct Injection,3711,151,359,7,1
+Flat,Diesel,OHV,Direct Injection,1479,504,246,6,0
+Rotary,Electric,DOHC,Port Injection,3229,382,331,19,1
+Flat,Gasoline,DOHC,Carbureted,1382,580,239,5,0
+Flat,Gasoline,DOHC,Direct Injection,3659,182,245,5,0
+Rotary,Gasoline,DOHC,Direct Injection,1585,196,394,8,0
+Flat,Gasoline,OHC,Direct Injection,1394,115,408,16,1
+Rotary,Gasoline,OHC,Direct Injection,1918,590,237,20,0
+Rotary,Gasoline,OHC,Carbureted,1281,431,246,12,1
+Flat,Gasoline,DOHC,Carbureted,1275,269,332,19,0
+V,Gasoline,OHV,Port Injection,1790,474,299,14,0
+Flat,Gasoline,DOHC,Carbureted,1407,367,142,10,1
+V,Diesel,OHV,Direct Injection,3067,275,225,12,0
+Rotary,Diesel,OHV,Direct Injection,3823,123,170,5,1
+V,Diesel,OHV,Direct Injection,1374,481,323,14,0
+V,Electric,DOHC,Port Injection,3265,448,428,9,0
+Rotary,Electric,OHC,Direct Injection,1485,542,431,9,0
+Inline,Electric,OHV,Port Injection,1211,370,151,13,0
+V,Hybrid,DOHC,Port Injection,3013,232,433,19,1
+V,Electric,DOHC,Direct Injection,2807,594,464,11,0
+Flat,Electric,DOHC,Port Injection,3909,272,304,14,0
+Flat,Gasoline,OHC,Carbureted,1693,284,172,6,0
+Flat,Hybrid,OHV,Carbureted,2549,101,274,13,1
+V,Gasoline,OHV,Carbureted,2526,323,280,19,0
+Inline,Hybrid,OHC,Carbureted,2127,243,323,19,1
+V,Hybrid,DOHC,Carbureted,2256,310,290,7,1
+Flat,Hybrid,DOHC,Carbureted,3073,341,354,10,0
+Inline,Electric,DOHC,Direct Injection,2404,466,246,11,0
+V,Electric,DOHC,Port Injection,1323,465,323,11,0
+V,Hybrid,DOHC,Port Injection,3445,317,143,5,1
+V,Diesel,OHV,Port Injection,1729,252,419,12,1
+Inline,Diesel,OHC,Carbureted,3460,329,115,17,0
+Rotary,Electric,OHC,Port Injection,3866,505,304,10,0
+V,Gasoline,OHV,Direct Injection,3439,583,385,13,0
+Flat,Gasoline,OHV,Direct Injection,3159,572,459,11,1
+V,Gasoline,OHV,Port Injection,3737,212,413,8,0
+V,Gasoline,OHV,Carbureted,2467,579,140,10,0
+Flat,Gasoline,DOHC,Carbureted,1705,259,135,20,0
+Flat,Gasoline,OHC,Port Injection,3079,595,474,6,1
+Flat,Diesel,OHV,Port Injection,3055,251,433,18,0
+Inline,Hybrid,OHV,Carbureted,3498,564,243,8,1
+Inline,Diesel,OHC,Port Injection,1693,426,317,14,0
+Rotary,Diesel,DOHC,Direct Injection,1227,544,466,20,1
+V,Diesel,OHV,Port Injection,3068,313,241,14,1
+Rotary,Gasoline,DOHC,Port Injection,1669,481,139,5,1
+Inline,Diesel,DOHC,Port Injection,3788,250,166,13,1
+Rotary,Hybrid,OHV,Carbureted,2078,244,382,19,1
+V,Diesel,OHV,Direct Injection,1611,262,337,10,1
+V,Hybrid,OHC,Carbureted,3815,540,357,11,0
+Inline,Hybrid,DOHC,Port Injection,1562,100,289,16,1
+V,Electric,DOHC,Direct Injection,1430,156,421,11,0
+V,Diesel,OHV,Direct Injection,3778,548,388,12,0
+Inline,Diesel,DOHC,Direct Injection,1251,505,402,7,0
+V,Electric,DOHC,Port Injection,1688,293,207,13,1
+Inline,Hybrid,OHV,Carbureted,2780,450,215,7,0
+Rotary,Diesel,OHV,Direct Injection,1766,304,308,16,1
+V,Gasoline,DOHC,Carbureted,3370,180,267,13,0
+V,Hybrid,OHC,Direct Injection,2346,444,335,15,0
+Flat,Gasoline,OHV,Port Injection,1790,495,111,5,1
+Inline,Gasoline,OHV,Port Injection,3014,264,330,10,1
+Rotary,Diesel,OHV,Carbureted,2914,244,207,20,1
+Flat,Diesel,OHV,Carbureted,3722,404,162,11,0
+Inline,Electric,OHV,Carbureted,1268,174,190,13,1
+Rotary,Hybrid,OHC,Direct Injection,2086,502,209,12,1
+Rotary,Gasoline,OHC,Port Injection,3004,178,145,14,0
+V,Hybrid,DOHC,Port Injection,2029,514,235,15,1
+Inline,Hybrid,DOHC,Direct Injection,1388,288,403,6,1
+Flat,Diesel,DOHC,Port Injection,2581,418,115,8,1
+Flat,Diesel,OHC,Carbureted,2116,516,380,6,1
+Rotary,Diesel,OHC,Direct Injection,3513,558,498,11,0
+V,Diesel,DOHC,Port Injection,1061,234,359,13,1
+Rotary,Hybrid,DOHC,Direct Injection,3625,135,144,9,1
+Rotary,Gasoline,DOHC,Port Injection,1341,598,330,15,1
+Rotary,Gasoline,OHV,Direct Injection,3024,233,465,7,0
+Rotary,Gasoline,OHC,Port Injection,1584,405,393,17,0
+Inline,Hybrid,OHC,Carbureted,1549,441,386,18,0
+V,Diesel,OHC,Direct Injection,3339,467,450,5,0
+Flat,Diesel,OHC,Carbureted,3798,296,500,6,1
+Inline,Gasoline,DOHC,Direct Injection,1337,484,128,15,0
+Flat,Electric,OHC,Direct Injection,3902,262,416,13,1
+Flat,Gasoline,OHC,Port Injection,3968,174,387,20,0
+V,Gasoline,OHC,Direct Injection,2813,433,340,9,0
+Inline,Hybrid,OHV,Direct Injection,2380,104,174,17,0
+Inline,Electric,DOHC,Port Injection,1647,434,193,7,1
+Flat,Diesel,OHC,Carbureted,2471,488,476,5,0
+Rotary,Gasoline,DOHC,Port Injection,2633,321,485,11,0
+Flat,Gasoline,OHC,Carbureted,1359,263,247,18,1
+Flat,Gasoline,OHV,Carbureted,2536,115,187,15,0
+V,Hybrid,DOHC,Carbureted,1345,239,436,8,1
+Inline,Diesel,OHC,Direct Injection,3944,147,132,5,1
+Flat,Gasoline,OHC,Direct Injection,2844,365,443,11,0
+Rotary,Diesel,OHV,Direct Injection,1032,530,189,15,0
+Flat,Gasoline,OHV,Port Injection,2575,505,224,14,1
+Rotary,Electric,OHV,Carbureted,2987,451,234,16,1
+Inline,Electric,OHC,Direct Injection,2051,309,392,18,0
+Flat,Diesel,OHC,Carbureted,2297,475,309,8,0
+Rotary,Hybrid,OHC,Port Injection,1965,146,260,16,1
+V,Gasoline,DOHC,Direct Injection,2597,133,330,19,0
+Flat,Gasoline,DOHC,Direct Injection,1522,215,441,14,1
+Flat,Gasoline,OHV,Direct Injection,3246,549,252,12,1
+Inline,Hybrid,OHV,Carbureted,1027,371,277,14,1
+Flat,Electric,OHC,Carbureted,2201,468,135,6,1
+Rotary,Diesel,OHC,Port Injection,2612,138,244,6,1
+Flat,Gasoline,OHV,Direct Injection,3452,289,289,14,1
+Rotary,Electric,OHC,Carbureted,3514,377,322,16,1
+Flat,Electric,DOHC,Direct Injection,1839,463,372,6,1
+Flat,Gasoline,DOHC,Carbureted,1238,175,211,18,0
+Flat,Hybrid,OHC,Direct Injection,3004,373,371,15,1
+Inline,Hybrid,DOHC,Carbureted,1411,427,404,11,0
+Rotary,Gasoline,OHC,Carbureted,2976,154,494,10,1
+V,Gasoline,OHC,Direct Injection,2922,347,410,7,1
+Flat,Diesel,DOHC,Port Injection,1635,137,325,10,0
+Inline,Hybrid,DOHC,Direct Injection,3404,241,141,20,1
+Flat,Diesel,OHV,Port Injection,2087,355,239,5,1
+Flat,Electric,OHC,Direct Injection,3726,522,322,8,1
+Flat,Diesel,OHC,Port Injection,1449,158,468,6,0
+Rotary,Diesel,OHV,Port Injection,2205,525,265,15,1
+V,Gasoline,DOHC,Port Injection,3494,179,309,10,1
+Inline,Electric,OHV,Port Injection,1713,572,273,11,0
+V,Diesel,OHC,Port Injection,1271,355,236,6,1
+Inline,Hybrid,OHV,Carbureted,2888,251,131,16,0
+Inline,Diesel,DOHC,Port Injection,1760,597,463,9,0
+Inline,Hybrid,OHC,Carbureted,2756,364,411,17,1
+V,Electric,OHC,Direct Injection,3961,440,156,12,0
+Inline,Electric,DOHC,Direct Injection,1147,344,247,13,0
+V,Hybrid,OHV,Carbureted,2528,393,403,8,1
+Inline,Diesel,OHC,Direct Injection,3075,454,184,12,1
+Rotary,Hybrid,DOHC,Carbureted,2285,232,434,7,1
+Flat,Diesel,OHC,Direct Injection,2393,541,373,19,1
+Flat,Electric,OHC,Direct Injection,3669,527,222,16,1
+Flat,Diesel,DOHC,Carbureted,2974,516,467,16,0
+Rotary,Diesel,OHV,Direct Injection,1652,513,307,6,1
+Flat,Diesel,OHV,Direct Injection,3867,444,312,8,1
+Flat,Gasoline,OHV,Carbureted,3157,125,460,18,1
+Rotary,Gasoline,OHV,Port Injection,2237,398,388,12,1
+Inline,Hybrid,OHC,Direct Injection,3565,387,161,18,0
+Inline,Hybrid,OHC,Carbureted,3620,547,402,14,1
+Rotary,Diesel,DOHC,Carbureted,2836,372,460,16,1
+V,Diesel,OHC,Port Injection,2051,385,478,6,0
+V,Hybrid,OHV,Port Injection,1753,431,176,14,1
+Rotary,Electric,OHV,Carbureted,1055,368,328,13,1
+V,Diesel,OHC,Direct Injection,1483,182,268,11,1
+Rotary,Hybrid,OHC,Port Injection,1620,254,362,19,0
+Inline,Gasoline,OHC,Direct Injection,3960,477,493,11,0
+V,Gasoline,OHV,Direct Injection,3321,225,318,6,0
+Flat,Electric,OHC,Direct Injection,1624,448,278,8,1
+Flat,Hybrid,DOHC,Port Injection,1063,115,138,20,1
+Inline,Electric,OHV,Direct Injection,1676,260,317,10,0
+Inline,Diesel,OHC,Port Injection,1590,438,246,5,0
+Flat,Hybrid,DOHC,Direct Injection,1723,505,101,9,1
+Rotary,Hybrid,OHV,Carbureted,3142,211,257,10,0
+V,Hybrid,OHC,Carbureted,1120,208,289,18,1
+Inline,Diesel,DOHC,Direct Injection,1641,356,140,13,1
+Flat,Gasoline,OHC,Carbureted,2801,149,244,9,1
+Flat,Electric,OHC,Direct Injection,3603,228,419,20,0
+Flat,Gasoline,DOHC,Direct Injection,1742,579,264,14,1
+Flat,Diesel,OHC,Direct Injection,2699,342,356,18,1
+V,Hybrid,DOHC,Carbureted,2967,517,484,8,0
+Flat,Diesel,OHC,Carbureted,3129,572,163,11,0
+V,Diesel,OHV,Port Injection,3793,133,200,15,1
+Flat,Electric,OHV,Direct Injection,1503,362,127,16,1
+Inline,Gasoline,DOHC,Direct Injection,2948,489,141,11,0
+Flat,Electric,OHC,Direct Injection,2916,382,259,15,0
+Rotary,Gasoline,DOHC,Carbureted,3701,381,290,5,0
+Rotary,Diesel,OHV,Port Injection,3964,356,152,6,1
+V,Gasoline,DOHC,Port Injection,1791,103,488,16,0
+Rotary,Hybrid,OHC,Carbureted,2729,147,235,16,1
+Inline,Gasoline,OHC,Direct Injection,1854,105,277,9,0
+V,Hybrid,OHV,Carbureted,1429,549,339,10,1
+Flat,Hybrid,OHV,Port Injection,3372,156,377,9,1
+V,Diesel,OHC,Carbureted,2476,329,207,7,1
+V,Hybrid,OHV,Port Injection,3922,271,490,7,0
+V,Diesel,OHC,Direct Injection,2284,165,392,19,1
+Flat,Diesel,OHV,Direct Injection,3382,236,284,16,1
+Rotary,Electric,DOHC,Direct Injection,1544,301,115,12,0
+Inline,Diesel,OHV,Carbureted,3955,319,477,10,0
+Inline,Diesel,DOHC,Direct Injection,3775,477,311,18,1
+V,Diesel,OHC,Carbureted,3254,272,278,15,1
+Rotary,Electric,OHC,Direct Injection,1169,123,332,20,0
+Inline,Gasoline,DOHC,Port Injection,3178,159,167,16,0
+Rotary,Hybrid,OHV,Port Injection,3412,248,363,10,1
+Flat,Hybrid,OHC,Carbureted,2714,212,450,14,0
+V,Electric,OHV,Port Injection,1522,593,486,7,0
+Rotary,Electric,OHV,Port Injection,1409,175,328,16,0
+Rotary,Diesel,DOHC,Port Injection,3952,304,336,18,0
+Inline,Gasoline,DOHC,Direct Injection,1994,556,397,10,0
+V,Electric,DOHC,Port Injection,1495,238,302,13,0
+Inline,Diesel,OHC,Carbureted,1849,495,359,13,1
+Rotary,Electric,DOHC,Direct Injection,3816,196,142,12,1
+V,Gasoline,DOHC,Port Injection,1803,404,455,15,1
+Rotary,Gasoline,OHC,Direct Injection,1703,210,394,7,0
+Flat,Electric,OHC,Port Injection,3066,563,173,6,1
+Flat,Electric,OHC,Carbureted,2818,463,136,19,0
+Inline,Diesel,OHV,Carbureted,2034,550,268,9,1
+Inline,Gasoline,OHC,Carbureted,3103,569,286,14,1
+V,Diesel,DOHC,Port Injection,2267,339,204,11,1
+Flat,Gasoline,OHC,Direct Injection,2038,489,268,19,0
+Flat,Electric,OHC,Direct Injection,2142,415,470,8,1
+V,Electric,DOHC,Carbureted,2432,210,219,9,0
+Inline,Gasoline,OHC,Port Injection,1046,272,209,14,1
+Inline,Hybrid,DOHC,Port Injection,1494,195,449,11,0
+Rotary,Diesel,DOHC,Carbureted,2342,575,387,17,0
+V,Electric,OHC,Carbureted,2035,432,306,13,0
+Rotary,Electric,OHV,Direct Injection,2984,229,287,11,1
+Rotary,Gasoline,OHV,Direct Injection,1390,315,111,16,0
+V,Hybrid,DOHC,Port Injection,3290,412,191,13,1
+Inline,Hybrid,OHC,Carbureted,3124,116,402,6,1
+Inline,Electric,DOHC,Direct Injection,2188,248,264,17,1
+Rotary,Electric,DOHC,Direct Injection,3484,324,399,8,1
+Flat,Electric,OHV,Direct Injection,2522,418,291,5,0
+Flat,Gasoline,OHV,Port Injection,1423,356,419,7,1
+V,Electric,OHC,Direct Injection,1854,349,287,11,0
+Rotary,Gasoline,OHC,Port Injection,3580,441,421,14,1
+V,Electric,DOHC,Carbureted,2915,288,143,16,0
+Rotary,Hybrid,OHV,Port Injection,1462,445,203,16,0
+Flat,Diesel,DOHC,Carbureted,2236,458,301,14,0
+V,Hybrid,DOHC,Port Injection,3005,574,225,7,0
+Flat,Gasoline,OHC,Port Injection,1340,334,438,7,1
+Inline,Diesel,OHC,Direct Injection,3804,520,289,10,0
+Rotary,Hybrid,DOHC,Direct Injection,2532,366,324,5,1
+V,Gasoline,OHV,Direct Injection,3675,111,293,5,0
+V,Electric,OHV,Port Injection,1459,599,247,16,0
+V,Gasoline,OHV,Carbureted,2779,558,345,12,0
+V,Electric,OHC,Carbureted,2530,436,375,5,1
+Flat,Diesel,OHC,Carbureted,1761,548,400,8,0
+Rotary,Gasoline,OHC,Port Injection,3196,377,459,19,1
+V,Electric,OHV,Direct Injection,1835,369,157,20,1
+Flat,Diesel,DOHC,Direct Injection,1638,452,380,7,0
+Flat,Hybrid,OHC,Direct Injection,3057,509,377,6,1
+V,Diesel,OHV,Carbureted,3698,545,432,12,1
+Flat,Electric,DOHC,Port Injection,3938,307,336,16,0
+Inline,Diesel,OHC,Direct Injection,2211,140,222,13,1
+Rotary,Gasoline,DOHC,Port Injection,3508,243,190,12,0
+V,Hybrid,OHV,Port Injection,3012,347,109,8,0
+V,Electric,OHV,Port Injection,1348,499,140,7,1
+Inline,Gasoline,OHC,Port Injection,3813,135,121,9,0
+V,Hybrid,OHV,Port Injection,2883,184,126,17,0
+Inline,Hybrid,OHV,Port Injection,2401,584,463,16,1
+Rotary,Hybrid,OHV,Carbureted,3540,223,119,13,1
+Inline,Diesel,OHV,Port Injection,1472,244,262,18,1
+Inline,Hybrid,OHV,Carbureted,3180,133,200,18,1
+Rotary,Hybrid,OHC,Direct Injection,3916,454,498,13,0
+Rotary,Gasoline,DOHC,Carbureted,3137,290,213,11,1
+V,Electric,DOHC,Port Injection,3829,462,474,6,1
+Flat,Electric,OHV,Direct Injection,1666,306,335,5,1
+Flat,Gasoline,DOHC,Direct Injection,3151,583,390,11,1
+Flat,Gasoline,OHV,Direct Injection,1362,126,325,9,0
+V,Diesel,OHC,Carbureted,1217,528,269,9,0
+V,Hybrid,OHC,Direct Injection,2954,218,187,17,1
+V,Hybrid,OHC,Carbureted,2837,461,425,15,0
+Flat,Hybrid,OHC,Direct Injection,1693,326,477,8,1
+Flat,Electric,OHV,Carbureted,3202,264,119,15,0
+Inline,Hybrid,DOHC,Direct Injection,1063,521,358,18,1
+V,Gasoline,OHC,Port Injection,2966,576,381,18,0
+Rotary,Hybrid,OHV,Direct Injection,1656,432,348,5,0
+V,Diesel,OHC,Port Injection,1630,163,173,13,0
+Rotary,Electric,OHC,Carbureted,1023,108,318,14,1
+Rotary,Electric,OHV,Direct Injection,1614,220,258,11,0
+Rotary,Gasoline,OHC,Port Injection,2159,461,115,13,0
+V,Hybrid,DOHC,Port Injection,2641,598,337,17,0
+Rotary,Electric,DOHC,Direct Injection,3262,545,126,10,1
+Inline,Diesel,DOHC,Port Injection,3628,583,342,12,1
+Rotary,Hybrid,DOHC,Direct Injection,3212,438,275,5,1
+Rotary,Hybrid,DOHC,Carbureted,3677,445,495,20,1
+V,Hybrid,OHV,Direct Injection,1127,229,244,6,0
+Rotary,Diesel,OHV,Direct Injection,3122,139,446,5,1
+Inline,Gasoline,DOHC,Direct Injection,3598,536,423,15,1
+Rotary,Diesel,OHC,Carbureted,2258,204,271,7,0
+Rotary,Electric,DOHC,Direct Injection,3755,450,224,14,0
+Flat,Electric,OHC,Direct Injection,3413,504,323,18,0
+Rotary,Gasoline,DOHC,Direct Injection,1548,520,382,13,0
+Inline,Diesel,DOHC,Direct Injection,2347,554,256,11,0
+Rotary,Electric,OHV,Port Injection,2075,422,236,5,1
+Flat,Diesel,OHC,Port Injection,1873,179,304,19,1
+Flat,Electric,DOHC,Carbureted,1675,483,325,5,0
+Inline,Hybrid,OHC,Direct Injection,1714,293,263,8,0
+Flat,Electric,OHV,Port Injection,1421,250,135,9,1
+V,Electric,OHV,Carbureted,1304,187,106,16,0
+Flat,Diesel,OHC,Direct Injection,2783,296,143,17,0
+V,Gasoline,OHV,Direct Injection,2396,559,287,17,0
+Inline,Diesel,DOHC,Carbureted,3277,154,381,16,1
+Flat,Gasoline,DOHC,Port Injection,2491,543,313,11,0
+V,Electric,OHV,Carbureted,1912,503,319,6,1
+Rotary,Hybrid,OHC,Carbureted,2024,378,238,18,0
+Inline,Diesel,OHV,Port Injection,1970,481,489,12,1
+V,Hybrid,DOHC,Direct Injection,2568,592,306,12,0
+Rotary,Gasoline,OHV,Port Injection,1303,513,133,17,0
+V,Electric,OHV,Direct Injection,3654,321,215,5,0
+Inline,Gasoline,OHV,Direct Injection,2038,431,240,15,0
+Rotary,Gasoline,DOHC,Direct Injection,1939,173,388,6,1
+V,Diesel,OHC,Carbureted,1919,345,115,19,0
+Inline,Diesel,OHV,Direct Injection,2520,301,464,12,1
+V,Gasoline,OHV,Direct Injection,3946,187,350,7,0
+V,Gasoline,DOHC,Carbureted,1400,549,315,7,0
+V,Electric,OHC,Direct Injection,1950,442,325,7,0
+Rotary,Diesel,OHC,Direct Injection,1436,155,170,20,0
+Flat,Gasoline,OHV,Carbureted,1366,338,248,6,1
+Rotary,Diesel,OHV,Direct Injection,3390,491,203,15,0
+Inline,Diesel,OHC,Carbureted,2325,286,384,6,0
+Inline,Diesel,DOHC,Port Injection,3701,484,193,8,0
+Inline,Hybrid,OHC,Carbureted,1343,157,338,18,0
+V,Gasoline,OHC,Direct Injection,1661,402,467,12,1
+Inline,Electric,DOHC,Direct Injection,3582,293,285,18,0
+V,Diesel,DOHC,Direct Injection,1871,201,214,18,0
+Flat,Gasoline,OHV,Port Injection,2606,178,415,7,1
+Inline,Hybrid,OHV,Port Injection,1648,572,107,18,1
+Rotary,Hybrid,OHV,Carbureted,3223,177,335,9,1
+Inline,Diesel,OHC,Carbureted,2321,184,169,10,0
+Inline,Gasoline,DOHC,Port Injection,3727,298,231,13,1
+Flat,Gasoline,OHC,Port Injection,2580,420,424,6,1
+Rotary,Electric,DOHC,Direct Injection,3100,198,236,12,0
+Rotary,Hybrid,DOHC,Port Injection,1132,461,121,17,1
+Rotary,Gasoline,DOHC,Carbureted,3174,482,383,19,0
+V,Gasoline,OHV,Carbureted,2708,267,350,9,0
+Flat,Diesel,DOHC,Direct Injection,2481,323,226,7,1
+Inline,Electric,OHV,Direct Injection,1991,399,134,19,0
+Rotary,Electric,DOHC,Port Injection,1095,295,267,12,1
+Flat,Electric,DOHC,Carbureted,2252,331,480,11,1
+Rotary,Electric,OHV,Carbureted,1940,292,170,16,1
+Flat,Electric,DOHC,Carbureted,2208,508,281,17,1
+Flat,Gasoline,OHC,Port Injection,1015,506,131,10,0
+Rotary,Diesel,DOHC,Port Injection,2799,207,145,17,0
+Rotary,Hybrid,OHC,Port Injection,1001,520,444,16,0
+V,Hybrid,DOHC,Port Injection,3509,116,196,14,0
+Inline,Gasoline,OHC,Direct Injection,2137,472,248,6,1
+Flat,Hybrid,OHV,Carbureted,3183,577,192,10,0
+V,Gasoline,OHV,Carbureted,3494,497,443,16,0
+Inline,Diesel,OHC,Port Injection,3652,275,170,10,1
+Inline,Diesel,DOHC,Port Injection,2436,305,268,20,0
+Inline,Electric,DOHC,Direct Injection,1811,503,161,18,1
+Inline,Hybrid,OHC,Port Injection,3808,411,125,8,1
+Rotary,Electric,OHV,Carbureted,1248,463,244,19,1
+V,Diesel,OHC,Carbureted,2128,369,500,17,1
+Flat,Hybrid,OHC,Direct Injection,3126,524,387,19,1
+Flat,Hybrid,OHC,Direct Injection,2423,304,317,14,1
+Rotary,Diesel,OHV,Port Injection,1643,151,181,19,0
+V,Hybrid,OHV,Port Injection,2031,312,474,20,1
+Flat,Gasoline,OHC,Port Injection,2905,365,349,11,1
+Flat,Hybrid,OHC,Port Injection,2007,162,442,6,0
+Flat,Diesel,OHV,Port Injection,1486,205,261,13,1
+V,Hybrid,DOHC,Port Injection,2241,502,377,5,1
+Inline,Diesel,DOHC,Carbureted,1697,585,370,19,1
+Rotary,Electric,OHV,Direct Injection,3017,327,488,11,0
+Flat,Gasoline,DOHC,Direct Injection,1495,317,145,13,1
+Rotary,Hybrid,OHV,Port Injection,1742,573,222,16,1
+Inline,Hybrid,DOHC,Carbureted,3264,569,207,15,1
+Rotary,Hybrid,DOHC,Port Injection,1255,316,409,14,1
+Rotary,Diesel,OHV,Direct Injection,1163,473,294,19,1
+Rotary,Hybrid,DOHC,Direct Injection,3318,318,387,10,1
+V,Diesel,OHC,Direct Injection,3124,539,244,18,1
+V,Diesel,DOHC,Port Injection,2632,451,309,18,0
+Rotary,Gasoline,OHV,Port Injection,2328,280,287,5,1
+V,Electric,OHV,Direct Injection,1020,208,338,15,0
+V,Electric,OHV,Port Injection,2328,426,143,19,1
+V,Electric,OHC,Port Injection,1049,215,130,8,1
+Inline,Electric,DOHC,Direct Injection,2473,161,169,18,0
+Flat,Gasoline,DOHC,Direct Injection,3879,294,468,7,1
+Flat,Hybrid,DOHC,Direct Injection,3380,593,149,8,1
+V,Gasoline,OHC,Carbureted,1593,162,423,8,0
+Flat,Gasoline,DOHC,Carbureted,1002,352,406,7,1
+Rotary,Gasoline,DOHC,Port Injection,1606,140,340,10,1
+V,Gasoline,OHC,Port Injection,2891,312,287,7,0
+Inline,Electric,OHV,Carbureted,1750,199,214,19,0
+Rotary,Gasoline,OHC,Carbureted,3211,600,152,14,0
+V,Diesel,OHV,Port Injection,3998,398,378,14,1
+Flat,Hybrid,DOHC,Port Injection,2132,570,354,15,0
+Inline,Diesel,DOHC,Carbureted,2198,316,439,14,1
+Flat,Diesel,OHV,Direct Injection,3411,520,360,7,0
+Flat,Hybrid,DOHC,Direct Injection,3566,158,216,7,0
+V,Gasoline,OHV,Direct Injection,1839,271,165,12,0
+Flat,Electric,DOHC,Carbureted,1648,432,299,17,0
+Flat,Electric,OHV,Port Injection,1137,509,424,8,1
+Inline,Diesel,OHV,Direct Injection,2159,505,223,5,1
+Flat,Diesel,OHC,Port Injection,2735,431,500,12,0
+Rotary,Gasoline,DOHC,Carbureted,2965,281,152,19,1
+Flat,Electric,OHV,Port Injection,3635,594,259,7,0
+V,Gasoline,OHV,Port Injection,2049,267,146,15,1
+V,Electric,OHV,Port Injection,2882,247,336,13,0
+V,Diesel,OHV,Carbureted,1168,510,435,20,1
+Inline,Gasoline,OHC,Carbureted,1219,532,297,20,0
+Flat,Gasoline,DOHC,Port Injection,1535,447,259,12,0
+V,Electric,OHC,Carbureted,1262,330,252,11,1
+Flat,Hybrid,OHC,Carbureted,3482,358,154,17,0
+Rotary,Gasoline,OHC,Carbureted,2030,301,455,16,0
+Flat,Electric,OHV,Direct Injection,3002,119,302,11,1
+Inline,Hybrid,DOHC,Carbureted,1250,378,232,15,0
+V,Gasoline,OHC,Direct Injection,3255,250,330,10,0
+Rotary,Diesel,DOHC,Port Injection,2954,470,264,20,0
+V,Diesel,OHV,Carbureted,3055,265,274,20,0
+Inline,Electric,OHC,Carbureted,2223,541,151,9,0
+Rotary,Gasoline,DOHC,Direct Injection,3187,215,322,13,1
+Inline,Hybrid,OHC,Port Injection,3426,578,405,12,0
+Inline,Electric,OHC,Direct Injection,3139,391,105,14,1
+V,Electric,OHC,Carbureted,1018,274,432,6,0
+Rotary,Diesel,OHV,Port Injection,2075,556,313,20,0
+V,Diesel,OHV,Direct Injection,1491,277,261,17,0
+Flat,Gasoline,DOHC,Port Injection,2811,178,387,17,0
+V,Diesel,OHC,Port Injection,3064,593,363,17,0
+V,Diesel,OHV,Carbureted,3938,364,452,15,0
+Rotary,Electric,DOHC,Direct Injection,1962,360,440,6,0
+Rotary,Hybrid,OHV,Carbureted,2435,154,326,6,0
+Inline,Diesel,OHV,Port Injection,2699,408,107,14,1
+V,Electric,DOHC,Port Injection,2835,291,196,18,1
+Flat,Hybrid,DOHC,Port Injection,1495,173,455,6,0
+V,Electric,OHC,Direct Injection,3193,418,271,11,1
+Inline,Hybrid,OHV,Port Injection,2559,114,419,19,1
+Flat,Gasoline,DOHC,Carbureted,2074,461,120,8,1
+Flat,Electric,OHC,Carbureted,1504,225,291,18,0
+Flat,Electric,OHC,Port Injection,1935,501,106,13,1
+V,Gasoline,OHC,Direct Injection,1891,407,482,6,1
+Flat,Hybrid,OHV,Carbureted,2453,491,427,12,0
+V,Gasoline,OHC,Port Injection,2124,207,191,11,0
+Inline,Gasoline,OHC,Port Injection,3326,348,261,20,0
+Rotary,Diesel,DOHC,Port Injection,1386,488,464,7,1
+Inline,Diesel,OHC,Direct Injection,3559,348,459,9,0
+Rotary,Gasoline,DOHC,Direct Injection,2986,538,171,5,0
+Flat,Hybrid,OHC,Port Injection,2746,226,337,6,0
+Inline,Gasoline,DOHC,Port Injection,1666,508,382,7,1
+Flat,Diesel,OHV,Direct Injection,2113,297,208,17,0
+Flat,Gasoline,OHC,Direct Injection,3607,216,173,20,0
+V,Hybrid,DOHC,Port Injection,2905,569,158,14,1
+Flat,Electric,OHC,Direct Injection,3229,241,340,7,0
+Rotary,Diesel,OHC,Carbureted,1566,397,389,17,1
+Inline,Hybrid,OHV,Direct Injection,3234,544,103,14,1
+Inline,Gasoline,OHC,Carbureted,2593,274,387,9,1
+Inline,Hybrid,DOHC,Carbureted,2248,144,454,20,1
+Flat,Electric,DOHC,Carbureted,2984,229,342,17,1
+Inline,Electric,OHV,Direct Injection,3140,407,235,9,1
+Rotary,Diesel,OHC,Direct Injection,3004,579,290,7,1
+Flat,Diesel,OHV,Direct Injection,2401,165,262,5,1
+Rotary,Hybrid,OHC,Direct Injection,1888,547,310,19,1
+V,Diesel,OHC,Carbureted,3662,106,359,13,1
+Rotary,Electric,OHC,Direct Injection,2966,205,338,13,1
+Inline,Hybrid,OHC,Carbureted,3932,401,274,5,0
+Flat,Diesel,OHC,Carbureted,1131,449,334,13,1
+Inline,Gasoline,OHC,Direct Injection,2017,418,355,19,0
+V,Diesel,OHC,Port Injection,2090,543,231,17,0
+Inline,Hybrid,OHV,Port Injection,1977,298,315,7,0
+Rotary,Hybrid,OHC,Direct Injection,3015,324,433,5,0
+Rotary,Hybrid,OHC,Port Injection,1974,239,143,14,1
+Inline,Diesel,OHV,Direct Injection,2819,122,359,16,1
+Rotary,Diesel,DOHC,Carbureted,1276,339,489,16,1
+Rotary,Electric,DOHC,Direct Injection,2724,414,364,11,0
+Flat,Gasoline,DOHC,Carbureted,2562,524,319,15,1
+Flat,Electric,OHV,Direct Injection,2415,600,420,12,0
+Rotary,Gasoline,OHC,Port Injection,2893,282,152,13,1
+Rotary,Hybrid,OHC,Carbureted,3861,326,414,6,1
+Inline,Diesel,OHV,Port Injection,1983,466,279,19,0
+Rotary,Gasoline,OHC,Carbureted,2662,108,345,8,0
+Rotary,Electric,OHC,Direct Injection,2553,391,474,19,1
+V,Electric,OHV,Carbureted,1243,376,445,5,1
+Flat,Hybrid,OHC,Carbureted,2828,296,216,8,0
+Inline,Diesel,OHV,Port Injection,2056,336,228,12,0
+Flat,Gasoline,OHC,Direct Injection,2844,395,435,8,1
+Inline,Gasoline,DOHC,Carbureted,1095,202,185,8,0
+Rotary,Gasoline,OHV,Port Injection,2892,437,193,19,1
+V,Electric,OHV,Port Injection,3644,495,272,18,0
+Inline,Gasoline,DOHC,Carbureted,3333,483,500,20,1
+Inline,Diesel,OHC,Port Injection,3398,404,444,16,1
+V,Gasoline,OHV,Direct Injection,3191,225,213,14,1
+Flat,Diesel,OHC,Port Injection,1396,460,424,10,0
+Rotary,Electric,OHC,Direct Injection,1091,165,231,15,1
+Rotary,Electric,OHC,Port Injection,1457,378,253,9,0
+Flat,Hybrid,OHC,Carbureted,1544,186,310,18,1
+V,Gasoline,OHV,Carbureted,1733,511,443,12,1
+Flat,Gasoline,OHC,Direct Injection,2580,148,348,12,0
+Rotary,Hybrid,OHV,Port Injection,2431,220,420,13,1
+Inline,Diesel,OHV,Direct Injection,3757,455,209,17,1
+Flat,Diesel,DOHC,Carbureted,2399,294,458,18,0
+V,Diesel,DOHC,Port Injection,1551,521,314,14,0
+Rotary,Hybrid,OHC,Port Injection,1148,201,177,15,0
+Flat,Gasoline,OHC,Port Injection,3272,480,340,6,1
+Inline,Electric,DOHC,Carbureted,2354,390,206,9,1
+V,Hybrid,OHC,Carbureted,1610,189,423,20,1
+Flat,Diesel,DOHC,Port Injection,1948,136,371,17,1
+Inline,Hybrid,OHV,Direct Injection,2148,478,282,12,0
+Inline,Diesel,DOHC,Port Injection,3434,463,476,19,1
+V,Electric,OHV,Carbureted,2803,451,239,15,1
+Rotary,Hybrid,DOHC,Port Injection,1860,330,215,6,0
+Rotary,Electric,OHV,Port Injection,3130,125,460,16,0
+Rotary,Electric,DOHC,Direct Injection,3733,330,289,14,0
+Rotary,Hybrid,DOHC,Port Injection,3311,241,152,16,0
+Flat,Hybrid,OHV,Port Injection,1536,161,450,20,0
+V,Diesel,OHV,Carbureted,1052,346,157,7,0
+Rotary,Hybrid,OHC,Carbureted,3626,337,339,14,0
+Inline,Diesel,OHV,Port Injection,2787,222,427,14,0
+Inline,Hybrid,OHC,Carbureted,3286,185,302,6,1
+Inline,Hybrid,OHC,Carbureted,2093,188,426,6,1
+Rotary,Electric,OHC,Port Injection,3570,165,183,17,1
+Flat,Diesel,OHC,Direct Injection,3527,198,181,15,0
+Flat,Electric,OHV,Carbureted,2031,594,198,18,1
+Rotary,Gasoline,OHC,Direct Injection,1557,496,103,12,1
+Rotary,Electric,DOHC,Port Injection,2921,491,404,11,1
+Flat,Electric,OHV,Port Injection,3938,383,475,16,0
+Flat,Diesel,DOHC,Direct Injection,1207,547,440,11,1
+Flat,Diesel,OHC,Port Injection,1035,435,469,13,1
+V,Hybrid,OHC,Direct Injection,2079,295,492,7,1
+V,Gasoline,DOHC,Carbureted,3190,518,451,16,0
+Inline,Electric,OHV,Port Injection,1722,245,488,6,0
+Flat,Gasoline,OHV,Direct Injection,2348,129,221,19,1
+V,Gasoline,OHV,Carbureted,3888,491,317,8,1
+Inline,Diesel,OHC,Direct Injection,2495,392,318,10,1
+Rotary,Electric,OHC,Carbureted,3548,270,477,7,0
+Inline,Hybrid,OHV,Carbureted,3093,273,436,20,1
+Flat,Hybrid,DOHC,Direct Injection,2634,515,133,13,1
+Rotary,Hybrid,DOHC,Direct Injection,1050,429,428,17,1
+Inline,Electric,DOHC,Carbureted,2833,146,186,19,0
+Inline,Electric,OHV,Direct Injection,2455,190,160,12,1
+V,Electric,OHV,Direct Injection,2850,468,377,19,0
+Flat,Hybrid,DOHC,Carbureted,2326,236,441,11,0
+Rotary,Hybrid,OHC,Direct Injection,3695,321,217,6,1
+Flat,Gasoline,OHV,Carbureted,2288,434,318,14,1
+Flat,Diesel,OHC,Direct Injection,1221,596,240,16,1
+Flat,Gasoline,DOHC,Carbureted,2940,135,396,20,1
+Rotary,Gasoline,OHV,Direct Injection,2593,431,254,12,1
+V,Hybrid,OHV,Carbureted,1943,277,412,15,1
+Flat,Gasoline,DOHC,Port Injection,3611,586,229,8,1
+V,Electric,DOHC,Direct Injection,3810,216,405,15,1
+V,Electric,OHV,Carbureted,3625,422,208,18,0
+Inline,Hybrid,OHV,Carbureted,1972,559,177,19,0
+V,Diesel,OHC,Direct Injection,3098,284,398,15,0
+Flat,Electric,OHV,Carbureted,2873,147,487,9,1
+Rotary,Electric,OHV,Port Injection,1422,594,364,5,1
+Inline,Electric,OHV,Port Injection,3981,208,132,12,0
+Flat,Electric,OHV,Carbureted,2030,344,433,14,1
+V,Electric,OHC,Direct Injection,3281,267,193,9,1
+Inline,Hybrid,DOHC,Port Injection,3017,142,313,8,0
+V,Diesel,DOHC,Direct Injection,3175,375,373,5,1
+Inline,Diesel,OHV,Port Injection,3572,424,317,20,0
+Flat,Hybrid,OHV,Carbureted,1422,221,431,12,1
+V,Diesel,OHC,Carbureted,1140,190,462,7,1
+V,Gasoline,DOHC,Carbureted,1314,179,232,13,0
+V,Diesel,OHC,Direct Injection,1667,376,498,7,0
+Flat,Hybrid,OHC,Port Injection,2632,539,133,19,0
+Rotary,Diesel,DOHC,Direct Injection,3723,349,162,12,0
+Inline,Diesel,OHC,Direct Injection,1345,587,378,13,1
+Rotary,Electric,OHC,Direct Injection,1784,460,401,8,1
+V,Electric,DOHC,Carbureted,2215,458,390,15,1
+Flat,Electric,DOHC,Carbureted,2391,546,193,19,1
+Rotary,Hybrid,OHV,Carbureted,1971,104,417,13,1
+Flat,Diesel,OHC,Direct Injection,2047,284,210,12,0
+Rotary,Diesel,OHV,Carbureted,3055,210,125,6,1
+Flat,Diesel,OHC,Carbureted,3385,387,268,10,0
+V,Hybrid,DOHC,Port Injection,2849,144,497,5,0
+Inline,Diesel,DOHC,Port Injection,2253,320,284,8,0
+Inline,Gasoline,OHV,Port Injection,3844,210,215,16,1
+Flat,Electric,DOHC,Carbureted,3182,547,147,6,1
+Rotary,Hybrid,DOHC,Carbureted,3642,334,297,6,1
+V,Hybrid,OHC,Carbureted,2446,447,141,8,1
+Inline,Gasoline,DOHC,Port Injection,2876,421,373,9,1
+Inline,Gasoline,DOHC,Carbureted,1713,588,208,18,1
+Inline,Electric,DOHC,Carbureted,1202,145,123,13,0
+Rotary,Diesel,OHV,Port Injection,1402,464,172,7,0
+Rotary,Gasoline,DOHC,Port Injection,3268,149,363,8,0
+Inline,Electric,OHV,Carbureted,2685,372,381,8,1
+Inline,Hybrid,OHV,Carbureted,2058,231,152,6,1
+Inline,Gasoline,DOHC,Port Injection,1333,483,354,14,1
+Flat,Hybrid,OHC,Carbureted,3928,543,128,8,0
+Rotary,Hybrid,DOHC,Direct Injection,3457,244,471,6,1
+Inline,Electric,OHC,Carbureted,2713,551,206,15,1
+V,Hybrid,OHC,Port Injection,1563,406,479,6,1
+Rotary,Electric,OHV,Carbureted,3356,264,201,11,1
+Flat,Diesel,OHV,Port Injection,2988,173,479,17,1
+V,Electric,OHC,Port Injection,2731,277,146,16,1
+Flat,Hybrid,DOHC,Port Injection,1115,267,150,6,1
+Rotary,Gasoline,OHC,Carbureted,1772,265,161,17,1
+Flat,Electric,OHV,Port Injection,2147,414,100,14,0
+Flat,Electric,DOHC,Port Injection,1378,281,399,20,0
+Rotary,Electric,OHC,Port Injection,3917,444,457,9,0
+Flat,Electric,OHC,Port Injection,2022,142,184,10,1
+Inline,Gasoline,OHC,Port Injection,1193,312,261,5,0
+V,Hybrid,OHC,Direct Injection,3209,296,435,14,1
+Flat,Diesel,DOHC,Port Injection,3489,199,181,16,0
+Flat,Diesel,DOHC,Carbureted,2621,486,262,12,0
+V,Diesel,OHV,Port Injection,3794,230,401,16,0
+Rotary,Electric,OHV,Carbureted,1889,226,136,15,1
+Rotary,Gasoline,DOHC,Direct Injection,3668,446,373,8,1
+V,Hybrid,OHC,Carbureted,1162,301,181,19,0
+Rotary,Hybrid,OHV,Carbureted,2979,367,322,7,0
+Rotary,Diesel,OHV,Carbureted,3248,216,338,18,1
+Inline,Electric,DOHC,Direct Injection,3168,164,116,17,1
+Rotary,Diesel,OHV,Port Injection,2998,466,327,5,0
+Inline,Hybrid,DOHC,Direct Injection,3527,187,310,13,0
+Flat,Diesel,OHC,Direct Injection,3671,112,276,5,1
+Rotary,Electric,OHV,Port Injection,3934,230,319,10,1
+Inline,Diesel,DOHC,Direct Injection,2508,327,346,6,0
+Rotary,Electric,OHC,Carbureted,1143,328,295,8,1
+V,Electric,OHC,Direct Injection,3961,498,344,15,1
+Flat,Gasoline,OHC,Carbureted,3084,452,170,5,1
+Inline,Hybrid,DOHC,Port Injection,3277,325,475,14,1
+Rotary,Hybrid,DOHC,Port Injection,1554,131,313,6,1
+Flat,Electric,OHC,Port Injection,1015,174,354,18,0
+Inline,Diesel,DOHC,Direct Injection,2765,236,127,8,1
+Inline,Gasoline,OHV,Direct Injection,1984,158,282,18,0
+V,Gasoline,OHV,Port Injection,3313,307,275,18,0
+Inline,Hybrid,DOHC,Port Injection,2351,262,412,10,1
+Flat,Diesel,OHC,Direct Injection,3591,328,295,17,0
+V,Gasoline,DOHC,Direct Injection,1158,484,165,6,0
+Inline,Electric,OHC,Direct Injection,3976,319,368,11,0
+Flat,Electric,DOHC,Carbureted,1686,211,407,13,1
+Flat,Hybrid,OHV,Direct Injection,1132,185,495,14,0
+Flat,Electric,OHV,Direct Injection,1894,435,185,10,0
+Inline,Diesel,OHV,Port Injection,2029,381,498,16,1
+Inline,Diesel,OHV,Direct Injection,3374,213,252,14,0
+V,Hybrid,DOHC,Port Injection,3994,177,160,6,0
+V,Hybrid,DOHC,Port Injection,3285,529,409,10,0
+Flat,Gasoline,OHC,Direct Injection,2967,531,435,9,1
+Inline,Electric,OHV,Port Injection,1661,554,309,5,0
+Flat,Hybrid,OHC,Port Injection,1406,560,489,8,1
+Inline,Diesel,OHC,Direct Injection,1990,451,136,9,1
+Rotary,Hybrid,OHC,Direct Injection,3637,310,187,5,0
+Inline,Diesel,OHC,Direct Injection,1650,152,187,14,1
+Flat,Electric,DOHC,Port Injection,1955,246,343,11,1
+Inline,Diesel,OHV,Port Injection,1897,595,184,18,1
+V,Hybrid,DOHC,Direct Injection,2229,278,435,12,0
+Flat,Hybrid,OHC,Direct Injection,3417,522,353,15,0
+V,Hybrid,OHV,Carbureted,1898,199,474,19,0
+Rotary,Gasoline,OHV,Carbureted,1426,499,476,12,0
+Flat,Gasoline,DOHC,Direct Injection,1099,314,439,5,0
+V,Diesel,OHV,Direct Injection,1363,173,263,19,0
+Rotary,Hybrid,OHC,Direct Injection,1895,380,396,8,1
+Inline,Diesel,OHC,Port Injection,3808,400,177,6,1
+Flat,Gasoline,OHV,Direct Injection,1520,465,478,17,0
+Flat,Diesel,OHV,Direct Injection,1000,376,229,12,1
+Flat,Diesel,OHC,Port Injection,2235,196,119,13,0
+Rotary,Diesel,OHC,Direct Injection,2643,205,185,14,1
+Rotary,Electric,DOHC,Port Injection,2307,225,108,6,1
+Inline,Gasoline,OHC,Port Injection,2538,176,195,12,0
+V,Hybrid,DOHC,Carbureted,2897,354,478,15,0
+V,Diesel,OHC,Carbureted,1543,200,473,13,0
+V,Gasoline,OHC,Direct Injection,3975,468,230,19,1
+Inline,Diesel,OHC,Direct Injection,3961,509,151,6,1
+Rotary,Gasoline,DOHC,Carbureted,3897,414,223,9,1
+Rotary,Electric,DOHC,Port Injection,1342,438,303,20,0
+Flat,Hybrid,OHC,Carbureted,1499,418,355,16,1
+V,Diesel,OHV,Direct Injection,2790,127,175,20,0
+V,Electric,DOHC,Port Injection,2101,191,200,7,1
+V,Gasoline,OHV,Carbureted,3816,342,148,5,1
+V,Electric,OHV,Direct Injection,2891,513,131,8,1
+Flat,Hybrid,DOHC,Port Injection,2256,423,357,5,0
+Rotary,Hybrid,DOHC,Carbureted,2639,499,294,6,1
+Rotary,Gasoline,DOHC,Port Injection,2125,445,134,17,0
+Flat,Electric,OHC,Direct Injection,1871,421,267,14,0
+Flat,Electric,OHC,Carbureted,1978,210,308,20,1
+Inline,Hybrid,OHV,Carbureted,2786,215,242,9,1
+Flat,Gasoline,DOHC,Direct Injection,1919,115,159,16,1
+Inline,Diesel,OHV,Port Injection,2079,558,309,10,0
+Inline,Hybrid,OHC,Carbureted,2544,464,345,15,0
+Inline,Diesel,OHV,Carbureted,2917,487,181,7,0
+Rotary,Hybrid,OHV,Port Injection,1710,146,259,13,0
+Rotary,Gasoline,DOHC,Direct Injection,1991,227,295,8,0
+V,Electric,OHC,Carbureted,2708,133,316,19,0
+Rotary,Gasoline,DOHC,Port Injection,1578,581,104,17,0
+Flat,Electric,OHV,Direct Injection,3066,528,285,20,1
+Flat,Hybrid,DOHC,Port Injection,1732,560,158,18,0
+V,Hybrid,OHC,Port Injection,3618,517,245,19,1
+Rotary,Hybrid,DOHC,Carbureted,3573,392,463,20,1
+Flat,Gasoline,OHV,Port Injection,2497,519,271,12,0
+Inline,Gasoline,OHC,Port Injection,3710,201,101,8,0
+Rotary,Hybrid,OHC,Port Injection,3927,562,210,5,1
+V,Electric,DOHC,Port Injection,2752,140,152,17,1
+Inline,Electric,OHC,Carbureted,1939,322,288,16,1
+Flat,Diesel,OHV,Direct Injection,2976,139,488,7,1
+Rotary,Hybrid,OHC,Direct Injection,1577,481,253,20,0
+Rotary,Gasoline,OHC,Port Injection,3959,460,400,5,0
+V,Electric,OHV,Port Injection,1917,299,254,8,0
+Rotary,Electric,OHC,Direct Injection,2687,288,207,17,0
+Flat,Electric,OHV,Direct Injection,2428,391,327,16,1
+Flat,Hybrid,OHC,Direct Injection,2889,233,372,7,0
+V,Gasoline,OHV,Direct Injection,3606,477,296,8,1
+Flat,Gasoline,OHC,Direct Injection,3410,333,401,9,0
+V,Hybrid,OHC,Carbureted,2329,203,103,12,0
+V,Hybrid,OHC,Carbureted,1129,195,242,13,0
+Inline,Gasoline,DOHC,Direct Injection,3171,363,157,7,1
+Flat,Gasoline,OHV,Port Injection,1968,561,213,10,0
+Inline,Diesel,OHC,Carbureted,3093,597,325,9,0
+Flat,Diesel,OHV,Carbureted,3953,464,440,6,1
+V,Hybrid,OHV,Port Injection,2007,571,392,6,0
+Inline,Electric,DOHC,Carbureted,1553,122,416,17,0
+Flat,Diesel,OHV,Port Injection,1313,103,133,6,1
+Rotary,Gasoline,OHV,Direct Injection,2238,519,440,18,1
+Rotary,Electric,OHV,Direct Injection,2424,326,171,15,0
+Rotary,Gasoline,DOHC,Carbureted,3894,219,148,17,1
+Rotary,Gasoline,DOHC,Port Injection,3400,313,172,14,1
+Flat,Gasoline,OHV,Direct Injection,2546,367,318,6,0
+V,Gasoline,OHV,Direct Injection,1716,142,428,17,0
+Flat,Hybrid,DOHC,Carbureted,3795,220,447,10,0
+Rotary,Electric,DOHC,Direct Injection,1731,402,354,20,1
+Rotary,Electric,OHV,Carbureted,2588,528,269,17,0
+Inline,Electric,OHC,Direct Injection,1100,305,235,18,0
+V,Diesel,DOHC,Port Injection,2324,112,180,19,1
+Flat,Electric,OHC,Direct Injection,1412,207,269,13,1
+Inline,Diesel,DOHC,Port Injection,1613,395,125,8,1
+V,Electric,OHC,Direct Injection,1432,208,336,14,1
+Flat,Hybrid,DOHC,Direct Injection,2437,390,314,9,0
+Rotary,Gasoline,OHV,Port Injection,1561,409,267,15,1
+Rotary,Electric,OHC,Carbureted,3039,489,336,6,1
+Inline,Hybrid,OHV,Direct Injection,1848,566,220,20,1
+Flat,Diesel,OHV,Carbureted,1314,293,356,19,1
+V,Gasoline,OHV,Port Injection,3520,240,452,7,1
+Rotary,Gasoline,OHV,Port Injection,3165,229,414,14,1
+V,Diesel,OHC,Port Injection,1184,430,303,5,0
+Rotary,Diesel,DOHC,Carbureted,1651,265,204,8,0
+Rotary,Gasoline,OHC,Carbureted,1447,301,264,20,1
+V,Hybrid,DOHC,Direct Injection,1276,246,322,16,1
+Flat,Electric,OHC,Port Injection,1022,190,356,19,1
+V,Electric,DOHC,Carbureted,2706,335,334,19,1
+V,Diesel,DOHC,Direct Injection,3053,262,399,15,0
+Inline,Diesel,OHV,Carbureted,3621,195,356,10,0
+V,Electric,DOHC,Port Injection,2925,492,491,12,0
+Rotary,Electric,DOHC,Port Injection,2781,454,302,19,0
+Inline,Electric,OHV,Direct Injection,1161,481,315,14,1
+Inline,Diesel,OHV,Carbureted,1840,548,154,17,1
+Rotary,Gasoline,DOHC,Direct Injection,1009,178,220,13,0
+Rotary,Hybrid,OHC,Port Injection,3993,566,232,18,1
+Flat,Electric,DOHC,Port Injection,2047,473,337,10,0

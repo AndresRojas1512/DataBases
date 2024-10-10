@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS manufacturers (
-    manufacturerID SERIAL PRIMARY KEY,
+    manufacturerID SERIAL,
     manufacturerName VARCHAR(100),
     headquarters VARCHAR(100),
     ceo VARCHAR(100),
@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS manufacturers (
 );
 
 CREATE TABLE IF NOT EXISTS dealers (
-    dealerID SERIAL PRIMARY KEY,
+    dealerID SERIAL,
     dealerName VARCHAR(100),
     dealerAddress VARCHAR(100),
     phoneNumber VARCHAR(100),
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS dealers (
 );
 
 CREATE TABLE IF NOT EXISTS cars (
-    carID SERIAL PRIMARY KEY,
+    carID SERIAL,
     engineID INT,
     manufacturerID INT,
     modelName VARCHAR(100),
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS cars (
 );
 
 CREATE TABLE IF NOT EXISTS engines (
-    engineID SERIAL PRIMARY KEY,
+    engineID SERIAL,
     engineType VARCHAR(100),
     fuelType VARCHAR(100),
     valveConfiguration VARCHAR(100),
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS engines (
 );
 
 CREATE TABLE IF NOT EXISTS sales (
-    sellID SERIAL PRIMARY KEY,
+    saleID SERIAL,
     dealerID INT,
     carID INT,
     sellDate DATE,
@@ -50,9 +50,7 @@ CREATE TABLE IF NOT EXISTS sales (
 );
 
 CREATE TABLE IF NOT EXISTS dealersManufacturers (
+    ID SERIAL,
     dealerID INT,
-    manufacturerID INT,
-    PRIMARY KEY (dealerID, manufacturerID),
-    FOREIGN KEY (dealerID) REFERENCES dealers(dealerID),
-    FOREIGN KEY (manufacturerID) REFERENCES manufacturers(manufacturerID)
+    manufacturerID INT
 )

@@ -1,4 +1,5 @@
 ALTER TABLE manufacturers
+    ADD CONSTRAINT pkManufacturerID PRIMARY KEY(manufacturerID),
     ADD CONSTRAINT uniqueName UNIQUE (manufacturerName),
     ADD CONSTRAINT checkFoundationYear CHECK (foundationYear >= 1886 AND foundationYear <= 2024),
     ADD CONSTRAINT checkRevenue CHECK (revenue >= 0),
@@ -8,6 +9,7 @@ ALTER TABLE manufacturers
     ALTER COLUMN ceo SET NOT NULL;
 
 ALTER TABLE dealers
+    ADD CONSTRAINT pkDealerID PRIMARY KEY(dealerID),
     ADD CONSTRAINT uniqueDealerName UNIQUE (dealerName),
     ADD CONSTRAINT checkAuthorizationStatus CHECK (authorizationStatus IN ('Authorized', 'Pending', 'Revoked', 'Suspended', 'Inactive')),
     ALTER COLUMN dealerName SET NOT NULL,
@@ -16,19 +18,8 @@ ALTER TABLE dealers
     ALTER COLUMN email SET NOT NULL,
     ALTER COLUMN authorizationStatus SET NOT NULL;
 
-ALTER TABLE cars
-    ADD CONSTRAINT fkCarsEngineID FOREIGN KEY (engineID) REFERENCES engines(engineID),
-    ADD CONSTRAINT fkCarsManufacturerID FOREIGN KEY (manufacturerID) REFERENCES manufacturers(manufacturerID),
-    ADD CONSTRAINT checkYear CHECK (modelYear > 1885 AND modelYear <= EXTRACT(YEAR FROM CURRENT_DATE)),
-    ADD CONSTRAINT checkWeightPositive CHECK (modelWeight > 0),
-    ALTER COLUMN engineID SET NOT NULL,
-    ALTER COLUMN manufacturerID SET NOT NULL,
-    ALTER COLUMN modelName SET NOT NULL,
-    ALTER COLUMN bodyType SET NOT NULL,
-    ALTER COLUMN modelYear SET NOT NULL,
-    ALTER COLUMN modelWeight SET NOT NULL
-
 ALTER TABLE engines
+    ADD CONSTRAINT pkEngineID PRIMARY KEY(engineID),
     ALTER COLUMN engineType SET NOT NULL,
     ALTER COLUMN displacement SET NOT NULL,
     ALTER COLUMN fuelType SET NOT NULL,
@@ -46,7 +37,21 @@ ALTER TABLE engines
     ADD CONSTRAINT checkFuelType CHECK (fuelType IN ('Gasoline', 'Diesel', 'Electric', 'Hybrid')),
     ADD CONSTRAINT checkFuelSystem CHECK (fuelSystem IN ('Direct Injection', 'Port Injection', 'Carbureted'));
 
+ALTER TABLE cars
+    ADD CONSTRAINT pkCarID PRIMARY KEY(carID),
+    ADD CONSTRAINT fkCarsEngineID FOREIGN KEY (engineID) REFERENCES engines(engineID),
+    ADD CONSTRAINT fkCarsManufacturerID FOREIGN KEY (manufacturerID) REFERENCES manufacturers(manufacturerID),
+    ADD CONSTRAINT checkYear CHECK (modelYear > 1885 AND modelYear <= EXTRACT(YEAR FROM CURRENT_DATE)),
+    ADD CONSTRAINT checkWeightPositive CHECK (modelWeight > 0),
+    ALTER COLUMN engineID SET NOT NULL,
+    ALTER COLUMN manufacturerID SET NOT NULL,
+    ALTER COLUMN modelName SET NOT NULL,
+    ALTER COLUMN bodyType SET NOT NULL,
+    ALTER COLUMN modelYear SET NOT NULL,
+    ALTER COLUMN modelWeight SET NOT NULL;
+
 ALTER TABLE sales
+    ADD CONSTRAINT pkSaleID PRIMARY KEY(saleID),
     ADD CONSTRAINT fkSellsDealerID FOREIGN KEY (dealerID) REFERENCES dealers(dealerID),
     ADD CONSTRAINT fkSellsCardID FOREIGN KEY (carID) REFERENCES cars(carID),
     ALTER COLUMN dealerID SET NOT NULL,
@@ -55,3 +60,8 @@ ALTER TABLE sales
     ALTER COLUMN price SET NOT NULL,
     ADD CONSTRAINT checkPrice CHECK (price >= 0),
     ADD CONSTRAINT checkSellDate CHECK (sellDate <= CURRENT_DATE);
+
+ALTER TABLE dealersManufacturers
+    ADD CONSTRAINT pkId PRIMARY KEY (ID),
+    ADD CONSTRAINT fkDealerID FOREIGN KEY (dealerID) REFERENCES dealers(dealerID),
+    ADD CONSTRAINT fkManufacturerID FOREIGN KEY (manufacturerID) REFERENCES manufacturers(manufacturerID);
