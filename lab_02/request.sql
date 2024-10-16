@@ -184,3 +184,32 @@ JOIN (
 WHERE 
     C.manufacturer_id = derived_sales_data.manufacturer_id;
 
+-- 13 nested subqueries with nesting level 3
+SELECT
+    'by units' AS criteria,
+    model_name AS "best selling",
+    total_sales
+FROM
+    cars
+JOIN (
+    SELECT
+        car_id,
+        sales_count AS total_sales
+    FROM (
+        SELECT
+            car_id,
+            sales_count,
+            ROW_NUMBER() OVER (ORDER BY sales_count DESC) AS rn
+        FROM (
+            SELECT
+                car_id,
+                COUNT(*) AS sales_count
+            FROM
+                sales
+            GROUP BY
+                car_id
+        ) AS sub_query_level_2
+    ) AS sub_query_level_1
+    WHERE rn = 1
+) AS top_selling ON top_selling.car_id = cars.car_id;
+
