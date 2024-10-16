@@ -27,7 +27,7 @@ WHERE
 ORDER BY
     sell_date;
 
--- 3
+-- 3 like predicate
 SELECT DISTINCT
     model_name,
     body_type,
@@ -38,3 +38,24 @@ WHERE
     model_name LIKE '%SUV'
 ORDER BY
     model_name;
+
+-- 4 in predicate with a nested subquery
+SELECT
+    sale_id,
+    dealer_id,
+    car_id,
+    sell_date,
+    price
+FROM
+    sales
+WHERE
+    dealer_id IN(
+        SELECT
+            dealer_id
+        FROM
+            dealers
+        WHERE
+            dealer_address LIKE '%NY%' OR dealer_address LIKE '%LA%'
+    )
+ORDER BY
+    sell_date;
