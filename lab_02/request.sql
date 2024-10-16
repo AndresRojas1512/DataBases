@@ -240,3 +240,23 @@ HAVING
 -- 16 single line insert
 INSERT INTO manufacturers (manufacturer_name, headquarters, ceo, foundation_year, revenue)
 VALUES ('ElectroToyota', 'Japan', 'Akio Toyoda', 1954, 157000000);
+
+-- 17 multi-line insert; insertion of a nested subquery
+INSERT INTO sales (dealer_id, car_id, sell_date, price, warranty_period, payment_method)
+SELECT
+    D.dealer_id,
+    C.car_id,
+    CURRENT_DATE,
+    25000,
+    5,
+    'Cash'
+FROM
+    cars C
+JOIN
+    dealers D ON D.dealer_id = c.manufacturer_id
+WHERE
+    C.model_year = 2020 AND
+    D.authorization_status = 'Authorized' AND
+    D.dealer_address LIKE '%NY%';
+
+-- 18 
