@@ -75,4 +75,20 @@ WHERE EXISTS (
         C.engine_id = engines.engine_id AND C.model_year > 2015
 );
 
--- 6 
+-- 6 comparision predicate with a quantifier
+SELECT
+    car_id,
+    model_name,
+    model_weight
+FROM
+    cars
+WHERE
+    model_weight > ALL (
+        SELECT
+            model_weight
+        FROM
+            cars
+        WHERE
+            manufacturer_id = 1
+);
+
