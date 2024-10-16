@@ -118,4 +118,18 @@ SELECT
 FROM
     dealers D
 
--- 9
+-- 9 simple CASE expression
+SELECT
+    car_id,
+    model_name,
+    model_weight,
+    CASE
+        WHEN model_weight < 1500 THEN 'Light'
+        WHEN model_weight BETWEEN 1500 AND 2500 THEN 'Medium'
+        WHEN model_weight > 2500 THEN 'Heavy'
+        ELSE 'Undefined'
+    END AS weight_class
+FROM
+    cars;
+
+-- 10 
