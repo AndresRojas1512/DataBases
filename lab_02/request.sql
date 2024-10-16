@@ -253,10 +253,16 @@ SELECT
 FROM
     cars C
 JOIN
-    dealers D ON D.dealer_id = c.manufacturer_id
+    dealersmanufacturers DM ON C.manufacturer_id = DM.manufacturer_id
+JOIN
+    dealers D ON DM.dealer_id = D.dealer_id
 WHERE
     C.model_year = 2020 AND
     D.authorization_status = 'Authorized' AND
     D.dealer_address LIKE '%NY%';
 
--- 18 
+-- 18 update
+UPDATE dealers
+SET authorization_status = 'Authorized'
+WHERE authorization_status = 'Pending'
+    AND dealer_address LIKE '%NY%';
