@@ -132,4 +132,16 @@ SELECT
 FROM
     cars;
 
--- 10 
+-- 10 select instruction that uses case search expression
+SELECT
+    sale_id,
+    car_id,
+    price,
+    CASE
+        WHEN price < 20000 THEN 'Economy'
+        WHEN price BETWEEN 20000 AND 40000 THEN 'Mid-range'
+        WHEN price > 40000 THEN 'Premium'
+        ELSE 'Undefined'
+    END AS price_category
+FROM
+    sales;
