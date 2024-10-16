@@ -28,3 +28,13 @@ ORDER BY
     sell_date;
 
 -- 3
+SELECT DISTINCT
+    model_name,
+    body_type,
+    manufacturer_id
+FROM
+    cars
+WHERE
+    model_name LIKE '%SUV'
+ORDER BY
+    model_name;
