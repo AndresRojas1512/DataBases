@@ -92,3 +92,18 @@ WHERE
             manufacturer_id = 1
 );
 
+-- 7 aggregate functions
+SELECT
+    AVG(total_price) AS actual_avg,
+    SUM(total_price) / COUNT(sale_id) AS calc_avg
+FROM (
+    SELECT
+        sale_id,
+        SUM(price) AS total_price
+    FROM
+        sales
+    GROUP BY
+        sale_id
+) AS total_sales
+
+-- 8 
