@@ -145,3 +145,18 @@ SELECT
     END AS price_category
 FROM
     sales;
+
+-- 11 create a new table from the resulting data set of a select instruction
+CREATE TABLE engine_summary AS
+SELECT
+    engine_type,
+    AVG(horsepower) AS avg_horsepower,
+    AVG(torque) AS total_torque,
+    COUNT(engine_id) AS engine_count
+FROM
+    engines
+GROUP BY
+    engine_type;
+SELECT * FROM engine_summary;
+
+-- 12 
