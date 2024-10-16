@@ -106,4 +106,16 @@ FROM (
         sale_id
 ) AS total_sales
 
--- 8 
+-- 8 scalar subqueries
+SELECT
+    D.dealer_id,
+    D.dealer_name,
+    (SELECT COUNT(DISTINCT manufacturer_id)
+    FROM
+        dealersmanufacturers
+    WHERE
+        dealer_id = D.dealer_id) AS num_manufacturers
+FROM
+    dealers D
+
+-- 9
