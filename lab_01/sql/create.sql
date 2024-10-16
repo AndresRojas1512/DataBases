@@ -1,56 +1,56 @@
 CREATE TABLE IF NOT EXISTS manufacturers (
-    manufacturerID SERIAL,
-    manufacturerName VARCHAR(100),
+    manufacturer_id SERIAL,
+    manufacturer_name VARCHAR(100),
     headquarters VARCHAR(100),
     ceo VARCHAR(100),
-    foundationYear INT,
+    foundation_year INT,
     revenue BIGINT
 );
 
 CREATE TABLE IF NOT EXISTS dealers (
-    dealerID SERIAL,
-    dealerName VARCHAR(100),
-    dealerAddress VARCHAR(100),
-    phoneNumber VARCHAR(100),
+    dealer_id SERIAL,
+    dealer_name VARCHAR(100),
+    dealer_address VARCHAR(100),
+    phone_number VARCHAR(100),
     email VARCHAR(100),
-    authorizationStatus VARCHAR(100)
+    authorization_status VARCHAR(100)
 );
 
 CREATE TABLE IF NOT EXISTS cars (
-    carID SERIAL,
-    engineID INT,
-    manufacturerID INT,
-    modelName VARCHAR(100),
-    bodyType VARCHAR(100),
-    modelYear INT,
-    modelWeight INT
+    car_id SERIAL,
+    engine_id INT,
+    manufacturer_id INT,
+    model_name VARCHAR(100),
+    body_type VARCHAR(100),
+    model_year INT,
+    model_weight INT
 );
 
 CREATE TABLE IF NOT EXISTS engines (
-    engineID SERIAL,
-    engineType VARCHAR(100),
-    fuelType VARCHAR(100),
-    valveConfiguration VARCHAR(100),
-    fuelSystem VARCHAR(100),
+    engine_id SERIAL,
+    engine_type VARCHAR(100),
+    fuel_type VARCHAR(100),
+    valve_configuration VARCHAR(100),
+    fuel_system VARCHAR(100),
     displacement INT,
     horsepower INT,
     torque INT,
-    compressionRatio DECIMAL,
-    turbocharged BOOLEAN
+    compression_ratio DECIMAL,
+    turbo_charged BOOLEAN
 );
 
 CREATE TABLE IF NOT EXISTS sales (
-    saleID SERIAL,
-    dealerID INT,
-    carID INT,
-    sellDate DATE,
+    sale_id SERIAL,
+    dealer_id INT,
+    car_id INT,
+    sell_date DATE,
     price INT,
-    warrantyPeriod INT,
-    paymentMethod VARCHAR(100)
+    warranty_period INT,
+    payment_method VARCHAR(100)
 );
 
-CREATE TABLE IF NOT EXISTS dealersManufacturers (
+CREATE TABLE IF NOT EXISTS dealersmanufacturers (
     ID SERIAL,
-    dealerID INT,
-    manufacturerID INT
+    dealer_id INT,
+    manufacturer_id INT
 )
