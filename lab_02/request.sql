@@ -225,4 +225,18 @@ FROM
 GROUP BY
     fuel_type;
 
--- 15 
+-- 15 select using group by and having sentence
+SELECT
+    engine_type,
+    AVG(horsepower) AS average_horsepower,
+    COUNT(engine_id) AS total_engines
+FROM
+    engines
+GROUP BY
+    engine_type
+HAVING
+    AVG(horsepower) > 200;
+
+-- 16 single line insert
+INSERT INTO manufacturers (manufacturer_name, headquarters, ceo, foundation_year, revenue)
+VALUES ('ElectroToyota', 'Japan', 'Akio Toyoda', 1954, 157000000);
