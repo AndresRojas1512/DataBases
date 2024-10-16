@@ -213,3 +213,16 @@ JOIN (
     WHERE rn = 1
 ) AS top_selling ON top_selling.car_id = cars.car_id;
 
+-- 14 select instruction with GROUP BY, but without HAVING
+SELECT
+    fuel_type,
+    AVG(displacement) AS average_displacement,
+    COUNT(engine_id) AS total_engines,
+    SUM(CASE WHEN turbo_charged THEN 1 ELSE 0 END) AS turbo_charged_engines,
+    AVG(compression_ratio) AS average_compresion_ratio
+FROM
+    engines
+GROUP BY
+    fuel_type;
+
+-- 15 
