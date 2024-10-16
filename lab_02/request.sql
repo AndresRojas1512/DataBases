@@ -147,16 +147,40 @@ FROM
     sales;
 
 -- 11 create a new table from the resulting data set of a select instruction
-CREATE TABLE engine_summary AS
 SELECT
     engine_type,
     AVG(horsepower) AS avg_horsepower,
-    AVG(torque) AS total_torque,
+    AVG(torque) AS avg_torque,
     COUNT(engine_id) AS engine_count
+INTO
+    engine_summary
 FROM
     engines
 GROUP BY
     engine_type;
 SELECT * FROM engine_summary;
 
--- 12 
+-- 12 select instruction that uses nested correlated subqueries
+SELECT 
+    C.model_name,
+    C.model_year,
+    derived_sales_data.total_sales,
+    derived_sales_data.avg_sale_price
+FROM 
+    cars C
+JOIN (
+    SELECT 
+        S.car_id, 
+        COUNT(*) AS total_sales,
+        AVG(S.price) AS avg_sale_price,
+        C.manufacturer_id
+    FROM 
+        sales S
+    JOIN 
+        cars C ON S.car_id = C.car_id
+    GROUP BY 
+        S.car_id, C.manufacturer_id
+) AS derived_sales_data ON C.car_id = derived_sales_data.car_id
+WHERE 
+    C.manufacturer_id = derived_sales_data.manufacturer_id;
+
