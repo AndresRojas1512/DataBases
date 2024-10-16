@@ -59,3 +59,20 @@ WHERE
     )
 ORDER BY
     sell_date;
+
+-- 5 exist predicate with a nested subquery
+SELECT
+    engine_id,
+    engine_type
+FROM
+    engines
+WHERE EXISTS (
+    SELECT
+        1
+    FROM
+        cars C
+    WHERE
+        C.engine_id = engines.engine_id AND C.model_year > 2015
+);
+
+-- 6 
