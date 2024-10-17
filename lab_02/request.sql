@@ -316,7 +316,7 @@ ORDER BY
 
 
 -- 23 recursion
--- create an hipotethical tables for the query
+-- create an hipotethical table for the query
 CREATE TABLE IF NOT EXISTS dealers_network (
     dealer_id INT NOT NULL,
     parent_dealer_id INT,
@@ -371,7 +371,7 @@ ORDER BY
     EXTRACT(YEAR FROM sell_date),
     dealer_id;
 
--- 25 eliminate complete duplicates
+-- 25 eliminate duplicates
 WITH unique_sales AS (
     SELECT
         sale_id,
@@ -400,53 +400,3 @@ FROM
     unique_sales
 WHERE
     rn = 1;
-
-
--- extra task
-
-CREATE TABLE IF NOT EXISTS table1
-(
-    tb1ID INT,
-    var VARCHAR,
-    valid_from DATE,
-    valid_to DATE
-);
-
-CREATE TABLE IF NOT EXISTS table2
-(
-    tb2ID INT,
-    var VARCHAR,
-    valid_from DATE,
-    valid_to DATE
-);
-
-INSERT INTO table1
-VALUES (1, 'A', to_date('01 09 2018', 'DD MM YYYY'), to_date('15 09 2018', 'DD MM YYYY')),
-       (1, 'B', to_date('16 09 2018', 'DD MM YYYY'), to_date('31 12 5999', 'DD MM YYYY'));
-
-INSERT INTO table2
-VALUES (1, 'A', to_date('01 09 2018', 'DD MM YYYY'), to_date('18 09 2018', 'DD MM YYYY')),
-       (1, 'B', to_date('19 09 2018', 'DD MM YYYY'), to_date('31 12 5999', 'DD MM YYYY'));
-
-SELECT * FROM table1;
-
-SELECT * FROM table2;
-
-SELECT tb1.tb1ID AS id,
-       tb1.var AS var1,
-       tb2.var AS var2,
-       CASE
-           WHEN tb1.valid_from > tb2.valid_from
-               THEN tb1.valid_from
-           ELSE tb2.valid_from END
-               AS valid_from,
-       CASE
-           WHEN tb1.valid_to < tb2.valid_to
-               THEN tb1.valid_to
-           ELSE tb2.valid_to END
-               AS valid_to
-FROM table1 tb1
-         JOIN table2 tb2
-              ON tb1.tb1ID = tb2.tb2ID
-                  AND tb1.valid_to > tb2.valid_from
-                  AND tb1.valid_from < tb2.valid_to;
