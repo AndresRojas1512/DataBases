@@ -282,4 +282,77 @@ WHERE horsepower < (
 
 -- 20 delete
 DELETE FROm dealers
-WHERE authorization_status = 'Revoked'
+WHERE authorization_status = 'Revoked';
+
+-- 21 delete with nested correlated subquery
+DELETE FROM engines
+WHERE horsepower < (
+    SELECT AVG(E2.horsepower) * 0.8
+    FROM engines E2
+    WHERE E2.engine_type = engines.engine_type
+);
+
+-- 22 SELECT using a simple generalized table expression
+WITH sales_summary AS (
+    SELECT
+        C.model_name,
+        SUM(S.price) AS total_revenue
+    FROM
+        sales S
+    JOIN
+        cars C ON S.car_id = C.car_id
+    WHERE
+        EXTRACT(YEAR FROM S.sell_date) = 2024
+    GROUP BY
+        C.model_name
+)
+SELECT
+    model_name,
+    total_revenue
+FROM
+    sales_summary
+ORDER BY
+    total_revenue DESC;
+
+
+-- 23 recursion
+-- create an hipotethical tables for the query
+CREATE TABLE IF NOT EXISTS dealers_network (
+    dealer_id INT NOT NULL,
+    parent_dealer_id INT,
+    dealer_name VARCHAR(100) NOT NULL,
+    CONSTRAINT pk_delaer_id PRIMARY KEY (dealer_id)
+);
+
+WITH RECURSIVE dealer_hierarchy AS (
+    SELECT
+        dealer_id,
+        parent_dealer_id,
+        dealer_name,
+        0 AS level
+    FROM
+        dealers_network
+    WHERE
+        parent_dealer_id IS NULL
+    UNION ALL
+
+    SELECT
+        D.dealer_id,
+        D.parent_dealer_id,
+        D.dealer_name,
+        DH.level + 1
+    FROM
+        dealers_network D
+    JOIN
+        dealer_hierarchy DH ON D.parent_dealer_id = DH.dealer_id
+)
+
+SELECT
+    dealer_id,
+    parent_dealer_id,
+    dealer_name,
+    level
+FROM
+    dealer_hierarchy;
+
+-- 24 
