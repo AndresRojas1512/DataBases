@@ -266,3 +266,20 @@ UPDATE dealers
 SET authorization_status = 'Authorized'
 WHERE authorization_status = 'Pending'
     AND dealer_address LIKE '%NY%';
+
+-- 19 update instruction with a scalar subquery in a SET sentence
+UPDATE engines
+SET horsepower = (
+    SELECT ROUND(AVG(horsepower))
+    FROM engines E2
+    WHERE E2.displacement = engines.displacement
+)
+WHERE horsepower < (
+    SELECT AVG(horsepower)
+    FROM engines E3
+    WHERE E3.displacement = engines.displacement
+);
+
+-- 20 delete
+DELETE FROm dealers
+WHERE authorization_status = 'Revoked'
