@@ -317,43 +317,40 @@ ORDER BY
 
 -- 23 recursion
 -- create an hipotethical table for the query
-CREATE TABLE IF NOT EXISTS dealers_network (
-    dealer_id INT NOT NULL,
-    parent_dealer_id INT,
-    dealer_name VARCHAR(100) NOT NULL,
-    CONSTRAINT pk_delaer_id PRIMARY KEY (dealer_id)
-);
 
-WITH RECURSIVE dealer_hierarchy AS (
+WITH RECURSIVE component_hierarchy AS (
     SELECT
-        dealer_id,
-        parent_dealer_id,
-        dealer_name,
-        0 AS level
+        C.component_id,
+        C.component_name,
+        C.parent_component_id,
+        C.material,
+        1 AS level
     FROM
-        dealers_network
+        components C
     WHERE
-        parent_dealer_id IS NULL
+        C.parent_component_id IS NULL
+    
     UNION ALL
 
     SELECT
-        D.dealer_id,
-        D.parent_dealer_id,
-        D.dealer_name,
-        DH.level + 1
+        C.component_id,
+        C.component_name,
+        C.parent_component_id,
+        C.material,
+        Ch.level + 1
     FROM
-        dealers_network D
-    JOIN
-        dealer_hierarchy DH ON D.parent_dealer_id = DH.dealer_id
+        components C
+    INNER JOIN component_hierarchy Ch ON Ch.component_id = C.parent_component_id
 )
 
 SELECT
-    dealer_id,
-    parent_dealer_id,
-    dealer_name,
-    level
+    component_id,
+    component_name,
+    parent_component_id,
+    material
 FROM
-    dealer_hierarchy;
+    component_hierarchy
+ORDER BY level, parent_component_id;
 
 -- 24 min, max, avg, over
 SELECT
