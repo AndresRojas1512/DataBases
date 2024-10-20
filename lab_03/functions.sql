@@ -1,4 +1,4 @@
--- Scalar function
+-- scalar function
 DROP FUNCTION IF EXISTS average_horsepower_by_manufacturer(INT);
 CREATE OR REPLACE FUNCTION average_horsepower_by_manufacturer(input_manufacturer_id INT)
 RETURNS FLOAT AS $$
@@ -153,5 +153,56 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql
 
-
 SELECT * FROM get_component_hierarchy(377);
+
+-- stored procedure without parameters
+DROP PROCEDURE IF EXISTS get_components_summary;
+CREATE OR REPLACE PROCEDURE get_components_summary()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    rec RECORD;
+BEGIN
+    RAISE NOTICE 'Engine ID | Number of Components';
+    FOR rec IN
+        SELECT engine_id, COUNT(*) AS num_components
+        FROM components
+        GROUP BY engine_id
+    LOOP
+        RAISE NOTICE '% | %', rec.engine_id, rec.num_components;
+    END LOOP;
+END;
+$$;
+
+CALL get_components_summary();
+
+-- stored procedure with parameters
+DROP PROCEDURE IF EXISTS update_engine_specs;
+
+CREATE OR REPLACE PROCEDURE update_engine_specs(
+    engine_id_param INT,
+    horsepower_decrease INT,
+    torque_increase INT
+)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF EXISTS (SELECT 1 FROM engines WHERE engine_id = engine_id_param) THEN
+        UPDATE engines
+        SET
+            horsepower = GREATEST(horsepower - horsepower_decrease, 100),
+            torque = torque + torque_increase
+        WHERE
+            engine_id = engine_id_param;
+        
+        RAISE NOTICE 'Engine % updated: hp decreased by=%, torque increased by=%', engine_id_param, horsepower_decrease, torque_increase;
+    ELSE
+        RAISE EXCEPTION 'error: %d engine not found', engine_id_param;
+    END IF;
+END;
+$$
+
+CALL update_engine_specs(2, 20, 30);
+SELECT * from engines WHERE engine_id = 1;
+SELECT * from engines WHERE engine_id = 2;
+
