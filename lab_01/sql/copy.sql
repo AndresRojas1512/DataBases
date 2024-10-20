@@ -27,3 +27,8 @@ COPY dealersManufacturers(dealer_id, manufacturer_id)
 FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/dealersManufacturers.csv'
 DELIMITER ','
 CSV HEADER
+
+COPY components(component_name, engine_id, parent_component_id, material)
+FROM '/home/andres/Desktop/5Semester/DataBases/DataBases/lab_01/models/components.csv'
+DELIMITER ','
+CSV HEADER

@@ -54,3 +54,11 @@ CREATE TABLE IF NOT EXISTS dealersmanufacturers (
     dealer_id INT,
     manufacturer_id INT
 )
+
+CREATE TABLE IF NOT EXISTS components (
+    component_id SERIAL,
+    component_name VARCHAR(100),
+    engine_id INT,
+    parent_component_id INT,
+    material VARCHAR(100)
+);

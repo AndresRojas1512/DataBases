@@ -65,3 +65,11 @@ ALTER TABLE dealersmanufacturers
     ADD CONSTRAINT pk_id PRIMARY KEY (id),
     ADD CONSTRAINT fk_dealer_id FOREIGN KEY (dealer_id) REFERENCES dealers(dealer_id),
     ADD CONSTRAINT fk_manufacturer_id FOREIGN KEY (manufacturer_id) REFERENCES manufacturers(manufacturer_id);
+
+ALTER TABLE components
+    ADD CONSTRAINT pk_component_id PRIMARY KEY (component_id),
+    ADD CONSTRAINT fk_engine_id FOREIGN KEY (engine_id) REFERENCES engines (engine_id) ON DELETE CASCADE,
+    ADD CONSTRAINT fk_parent_component FOREIGN KEY (parent_component_id) REFERENCES components (component_id) ON DELETE CASCADE,
+    ALTER COLUMN component_name SET NOT NULL,
+    ALTER COLUMN engine_id SET NOT NULL,
+    ADD CONSTRAINT unique_component_name_per_engine UNIQUE (component_name, engine_id);
