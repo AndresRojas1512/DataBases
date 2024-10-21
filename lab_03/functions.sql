@@ -297,3 +297,42 @@ END;
 $$;
 
 CALL get_table_metadata();
+
+-- DML trigger after
+CREATE TABLE IF NOT EXISTS sales_audit (
+    audit_id SERIAL PRIMARY KEY,
+    sale_id INT,
+    car_id INT,
+    dealer_id INT,
+    sell_date DATE,
+    price INT,
+    audit_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DROP FUNCTION IF EXISTS log_new_sale;
+CREATE OR REPLACE FUNCTION log_new_sale()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    INSERT INTO sales_audit (sale_id, car_id, dealer_id, sell_date, price)
+    VALUES (
+        NEW.sale_id,
+        NEW.car_id,
+        NEW.dealer_id,
+        NEW.sell_date,
+        NEW.price
+    );
+    RETURN NEW;
+END;
+$$;
+
+CREATE TRIGGER after_sale_insert
+AFTER INSERT ON sales
+FOR EACH ROW
+EXECUTE FUNCTION log_new_sale();
+
+INSERT INTO sales (dealer_id, car_id, sell_date, price, warranty_period, payment_method)
+VALUES (1, 5, '2024-10-10', 25000, 2, 'Cash');
+
+SELECT * FROM sales_audit;
