@@ -157,6 +157,7 @@ SELECT * FROM get_component_hierarchy(377);
 
 -- stored procedure without parameters
 DROP PROCEDURE IF EXISTS get_components_summary;
+
 CREATE OR REPLACE PROCEDURE get_components_summary()
 LANGUAGE plpgsql
 AS $$
@@ -206,3 +207,31 @@ CALL update_engine_specs(2, 20, 30);
 SELECT * from engines WHERE engine_id = 1;
 SELECT * from engines WHERE engine_id = 2;
 
+-- stored procedure with recursive CTE
+DROP PROCEDURE IF EXISTS delete_engine_components;
+
+CREATE OR REPLACE PROCEDURE delete_engine_components(engine_id_param INT)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    WITH RECURSIVE component_hierarchy AS (
+        SELECT component_id, parent_component_id
+        FROM components
+        WHERE engine_id = engine_id_param
+        
+        UNION ALL
+
+        SELECT c.component_id, c.parent_component_id
+        FROM components c
+        INNER JOIN component_hierarchy ch ON c.parent_component_id = ch.component_id
+    )
+    DELETE FROM components
+    WHERE component_id IN (SELECT component_id FROM component_hierarchy);
+
+    -- Optionally, raise a notice for logging/debugging
+    RAISE NOTICE 'Components for engine % and their sub-components deleted.', engine_id_param;
+END;
+$$;
+
+CALL delete_engine_components(190);
+SELECT * FROM components WHERE engine_id = 190;
