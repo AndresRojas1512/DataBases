@@ -298,7 +298,7 @@ $$;
 
 CALL get_table_metadata();
 
--- DML trigger after
+-- DML trigger: AFTER
 CREATE TABLE IF NOT EXISTS sales_audit (
     audit_id SERIAL PRIMARY KEY,
     sale_id INT,
@@ -336,3 +336,72 @@ INSERT INTO sales (dealer_id, car_id, sell_date, price, warranty_period, payment
 VALUES (1, 5, '2024-10-10', 25000, 2, 'Cash');
 
 SELECT * FROM sales_audit;
+
+-- DML trigger: INSTEAD OF
+DROP VIEW IF EXISTS car_engine_view;
+
+CREATE OR REPLACE VIEW car_engine_view AS
+SELECT
+    C.car_id,
+    C.model_name,
+    C.manufacturer_id,
+    C.body_type,
+    C.model_year,
+    C.model_weight,
+    E.engine_id,
+    E.engine_type,
+    E.horsepower,
+    E.torque
+FROM
+    cars C
+JOIN
+    engines E ON C.engine_id = E.engine_id;
+
+DROP FUNCTION IF EXISTS update_car_engine_view;
+
+CREATE OR REPLACE FUNCTION update_car_engine_view()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    UPDATE cars
+    SET
+        model_name = NEW.model_name,
+        manufacturer_id = NEW.manufacturer_id,
+        body_type = NEW.body_type,
+        model_year = NEW.model_year,
+        model_weight = NEW.model_weight
+    WHERE car_id = NEW.car_id;
+
+    UPDATE engines
+    SET
+        engine_type = NEW.engine_type,
+        horsepower = NEW.horsepower,
+        torque = NEW.torque
+    WHERE engine_id = NEW.engine_id;
+    
+    RETURN NULL;
+END;
+$$;
+
+CREATE TRIGGER update_car_engine_view_trigger
+INSTEAD OF UPDATE ON car_engine_view
+FOR EACH ROW
+EXECUTE FUNCTION update_car_engine_view();
+
+-- usage
+UPDATE car_engine_view
+SET
+    model_name = 'Mustang GT',
+    manufacturer_id = 971,
+    body_type = 'Coupe',
+    model_year = 2020,
+    model_weight = 1800,
+    engine_type = 'V',
+    horsepower = 450,
+    torque = 550
+WHERE car_id = 1;
+
+-- check changes
+SELECT * FROM cars WHERE car_id = 1;
+SELECT * FROM engines WHERE engine_id = (SELECT engine_id FROM cars WHERE car_id = 1);
