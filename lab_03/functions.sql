@@ -228,10 +228,50 @@ BEGIN
     DELETE FROM components
     WHERE component_id IN (SELECT component_id FROM component_hierarchy);
 
-    -- Optionally, raise a notice for logging/debugging
     RAISE NOTICE 'Components for engine % and their sub-components deleted.', engine_id_param;
 END;
 $$;
 
 CALL delete_engine_components(190);
 SELECT * FROM components WHERE engine_id = 190;
+
+-- stored procedure with cursor
+DROP PROCEDURE IF EXISTS adjust_engine_horsepower;
+
+CREATE OR REPLACE PROCEDURE adjust_engine_horsepower()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    engines_cursor CURSOR FOR
+        SELECT engine_id, displacement, horsepower
+        FROM engines;
+    engine_record RECORD;
+BEGIN
+    OPEN engines_cursor;
+    LOOP
+        FETCH engines_cursor INTO engine_record;
+        EXIT WHEN NOT FOUND;
+
+        IF engine_record.displacement > 3000 THEN
+            UPDATE engines
+            SET horsepower = horsepower * 1.10
+            WHERE engine_id = engine_record.engine_id;
+            RAISE NOTICE 'engine=%, increased hp=%', engine_record.engine_id, engine_record.horsepower * 1.10;
+        
+        ELSIF engine_record.displacement <= 2000 THEN
+            UPDATE engines
+            SET horsepower = horsepower * 0.95
+            WHERE engine_id = engine_record.engine_id;
+            RAISE NOTICE 'engine=%, decresed hp=%d', engine_record.engine_id, engine_record.horsepower * 0.95;
+        END IF;
+    END LOOP;
+
+    CLOSE engines_cursor;
+END;
+$$;
+
+CALL adjust_engine_horsepower();
+
+SELECT engine_id, displacement, horsepower
+FROM engines
+ORDER BY displacement;
