@@ -262,7 +262,7 @@ BEGIN
             UPDATE engines
             SET horsepower = horsepower * 0.95
             WHERE engine_id = engine_record.engine_id;
-            RAISE NOTICE 'engine=%, decresed hp=%d', engine_record.engine_id, engine_record.horsepower * 0.95;
+            RAISE NOTICE 'engine=%, decresed hp=%', engine_record.engine_id, engine_record.horsepower * 0.95;
         END IF;
     END LOOP;
 
@@ -275,3 +275,25 @@ CALL adjust_engine_horsepower();
 SELECT engine_id, displacement, horsepower
 FROM engines
 ORDER BY displacement;
+
+-- stored procedure for accessing metadata
+DROP PROCEDURE IF EXISTS get_table_metadata;
+
+CREATE OR REPLACE PROCEDURE get_table_metadata()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    rec RECORD;
+BEGIN
+    FOR rec IN
+        SELECT table_name, column_name, data_type
+        FROM information_schema.columns
+        WHERE table_schema = 'public'
+        ORDER BY table_name, ordinal_position
+    LOOP
+        RAISE NOTICE 'table=%, column=%, datatype=%', rec.table_name, rec.column_name, rec.data_type;
+    END LOOP;
+END;
+$$;
+
+CALL get_table_metadata();
