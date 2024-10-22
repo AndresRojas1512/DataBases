@@ -40,3 +40,21 @@ RETURNS FLOAT AS $$
 $$ LANGUAGE plpython3u;
 
 SELECT get_avg_hp_to_weight_ratio() AS avg_hp_to_weight_ratio;
+
+-- user-defined table function
+DROP FUNCTION IF EXISTS get_cars_by_body_type;
+
+CREATE OR REPLACE FUNCTION get_cars_by_body_type(body_type VARCHAR)
+RETURNS TABLE(model_name VARCHAR, engine_type VARCHAR, horsepower INT, model_year INT) AS $$
+    query = """
+    SELECT c.model_name, e.engine_type, e.horsepower, c.model_year
+    FROM cars c
+    JOIN engines e ON c.engine_id = e.engine_id
+    WHERE c.body_type = %s;
+    """ % plpy.quote_literal(body_type)
+    cars = plpy.execute(query)
+    return cars
+$$ LANGUAGE plpython3u;
+
+SELECT * FROM get_cars_by_body_type('Sedan');
+
