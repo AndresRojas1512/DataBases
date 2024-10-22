@@ -105,3 +105,41 @@ EXECUTE FUNCTION log_authorization_status_change();
 
 UPDATE dealers SET authorization_status = 'Suspended' WHERE dealer_id = 1;
 SELECT * FROM authorization_status_audit;
+
+-- data type
+CREATE TYPE vehicle_identification AS (
+    vin VARCHAR(18),
+    license_plate VARCHAR(10),
+    registration_country VARCHAR(100)
+);
+
+DROP FUNCTION IF EXISTS get_sale_details_by_vin;
+CREATE OR REPLACE FUNCTION get_sale_details_by_vin(vin VARCHAR)
+RETURNS TABLE(sale_id INT, dealer_id INT, car_id INT, sell_date DATE, price NUMERIC, warranty_period INT, payment_method VARCHAR, license_plate VARCHAR, registration_country VARCHAR) AS $$
+    query = """
+    SELECT
+        sale_id,
+        dealer_id,
+        car_id,
+        sell_date,
+        price,
+        warranty_period,
+        payment_method,
+        (identification).license_plate AS license_plate,
+        (identification).registration_country AS registration_country
+    FROM
+        sales
+    WHERE
+        (identification).vin = %s;
+    """ % plpy.quote_literal(vin)
+
+    result = plpy.execute(query)
+
+    if not result:
+        plpy.error('No sales found for this VIN.')
+    
+    return [(row['sale_id'], row['dealer_id'], row['car_id'], row['sell_date'], row['price'], row['warranty_period'], row['payment_method'], row['license_plate'], row['registration_country']) for row in result]
+$$ LANGUAGE plpython3u;
+
+
+SELECT * FROM get_sale_details_by_vin('kva54252efk98FGD53');

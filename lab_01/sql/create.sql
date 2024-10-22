@@ -49,6 +49,9 @@ CREATE TABLE IF NOT EXISTS sales (
     payment_method VARCHAR(100)
 );
 
+ALTER TABLE sales
+ADD COLUMN identification vehicle_identification;
+
 CREATE TABLE IF NOT EXISTS dealersmanufacturers (
     ID SERIAL,
     dealer_id INT,

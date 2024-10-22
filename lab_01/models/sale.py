@@ -64,6 +64,17 @@ def fetchIDs(query, connection_details):
     conn.close()
     return ids
 
+def generateVehicleIdentification(saleIds):
+    faker = Faker()
+    with open("vehicle_identification.csv", mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['sale_id', 'vin', 'licence', 'registration_country'])
+        for saleId in salesIds:
+            vin = faker.bothify(text='???#####???##???##')
+            license_plate = faker.bothify(text='???-####')
+            registration_country = faker.country()
+            writer.writerow([saleId, vin, license_plate, registration_country])
+
 if __name__ == "__main__":
     connection_details = {
         'dbname' : 'cars01',
@@ -72,7 +83,11 @@ if __name__ == "__main__":
         'host' : 'localhost'
     }
 
-    dealerIDs = fetchIDs("SELECT dealerID FROM dealers", connection_details)
-    carIDs = fetchIDs("SELECT carID FROM cars", connection_details)
-    sales = generateSales(1000, dealerIDs, carIDs)
-    saveToCsv(sales, 'sales.csv')
+    # dealerIDs = fetchIDs("SELECT dealerID FROM dealers", connection_details)
+    # carIDs = fetchIDs("SELECT carID FROM cars", connection_details)
+    # sales = generateSales(1000, dealerIDs, carIDs)
+    # saveToCsv(sales, 'sales.csv')
+
+    # vehicle identification
+    salesIds = fetchIDs("SELECT sale_id FROM sales", connection_details)
+    generateVehicleIdentification(salesIds)
