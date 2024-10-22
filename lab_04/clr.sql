@@ -76,4 +76,32 @@ $$;
 
 CALL update_horsepower(2010, 10);
 
+-- trigger
+CREATE TABLE IF NOT EXISTS authorization_status_audit (
+    change_id SERIAL PRIMARY KEY,
+    dealer_id INT,
+    old_status VARCHAR(100),
+    new_status VARCHAR(100),
+    change_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
+DROP FUNCTION IF EXISTS log_authorization_status_change;
+
+CREATE OR REPLACE FUNCTION log_authorization_status_change()
+RETURNS TRIGGER AS $$
+    if TD['new']['authorization_status'] != TD['old']['authorization_status']:
+        query = """
+        INSERT INTO authorization_status_audit(dealer_id, old_status, new_status)
+        VALUES (%s, %s, %s);
+        """ % (TD['new']['dealer_id'], plpy.quote_literal(TD['old']['authorization_status']), plpy.quote_literal(TD['new']['authorization_status']))
+        plpy.execute(query)
+    return 'MODIFY'
+$$ LANGUAGE plpython3u;
+
+CREATE TRIGGER trigger_log_authorization_status_change
+AFTER UPDATE OF authorization_status ON dealers
+FOR EACH ROW
+EXECUTE FUNCTION log_authorization_status_change();
+
+UPDATE dealers SET authorization_status = 'Suspended' WHERE dealer_id = 1;
+SELECT * FROM authorization_status_audit;
