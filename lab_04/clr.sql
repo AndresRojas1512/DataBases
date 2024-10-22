@@ -58,3 +58,22 @@ $$ LANGUAGE plpython3u;
 
 SELECT * FROM get_cars_by_body_type('Sedan');
 
+-- stored procedure
+DROP PROCEDURE IF EXISTS update_horsepower;
+
+CREATE OR REPLACE PROCEDURE update_horsepower(min_model_year INT, increase_percentage FLOAT)
+LANGUAGE plpython3u AS $$
+    query="""
+    UPDATE engines
+    SET horsepower = horsepower * (1 + (%s / 100))
+    WHERE engine_id IN (
+        SELECT engine_id FROM cars WHERE model_year < %s
+    );
+    """ % (increase_percentage, min_model_year)
+    plpy.execute(query)
+    plpy.notice('cars older than:%s. Update by:%s%%' % (min_model_year, increase_percentage))
+$$;
+
+CALL update_horsepower(2010, 10);
+
+
